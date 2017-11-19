@@ -72,7 +72,9 @@ namespace UWP_Project_3
 
         private async void button1_Click(object sender, RoutedEventArgs e)
         {
-            RootObject myWeather = await OpenWeatherMap.GetWeather(32.77, -97.79);
+            var currentPosition = await locationManager.GetPosition();
+            RootObject myWeather = await OpenWeatherMap.GetWeather(currentPosition.Coordinate.Point.Position.Latitude, currentPosition.Coordinate.Point.Position.Longitude);
+            //RootObject myWeather = await OpenWeatherMap.GetWeather(32.77, -97.79);
             //take away 273 from temp to convert to celsius from kelvin
             textBlock2.Text = myWeather.name + " - " + (myWeather.main.temp - 273) + " - " + myWeather.weather[0].description;
         }
