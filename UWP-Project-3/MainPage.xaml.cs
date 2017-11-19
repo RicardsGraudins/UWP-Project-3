@@ -4,6 +4,7 @@ using Windows.Devices.Geolocation;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using System.Diagnostics;
+using static UWP_Project_3.OpenWeatherMap;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -68,5 +69,12 @@ namespace UWP_Project_3
                 Message = msg;
             }
         }//GPSException
+
+        private async void button1_Click(object sender, RoutedEventArgs e)
+        {
+            RootObject myWeather = await OpenWeatherMap.GetWeather(32.77, -97.79);
+            //take away 273 from temp to convert to celsius from kelvin
+            textBlock2.Text = myWeather.name + " - " + (myWeather.main.temp - 273) + " - " + myWeather.weather[0].description;
+        }
     }//main
 }//UWP_Project_3
