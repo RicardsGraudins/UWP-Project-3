@@ -8,6 +8,63 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <RelativePanel Background="Lavender">
+            <Button Name="Menu"
+                    RelativePanel.AlignBottomWithPanel="False"
+                    FontFamily="Segoe MDL2 Assets"
+                    FontSize="36"
+                    Content="&#xE700;"
+                    Background="Lavender"
+                    Click="Menu_Click" />
+            <TextBlock Name="TitleTextBlock"
+                      RelativePanel.AlignHorizontalCenterWithPanel="True"
+                      FontSize="36"
+                      FontWeight="Bold">Home</TextBlock>
+            <Button Name="RefreshButton"
+                    RelativePanel.AlignRightWithPanel="True"
+                    FontFamily="Segoe MDL2 Assets"
+                    FontSize="36"
+                    Content="&#xE72C;"
+                    Background="Lavender"
+                    Click="RefreshButton_Click" />
+        </RelativePanel>
+
+        <SplitView Grid.Row="1" Name="MySplitView" DisplayMode="CompactOverlay" OpenPaneLength="200" CompactPaneLength="55">
+            <SplitView.Pane>
+                <ListBox Background="Lavender" SelectionMode="Single" SelectionChanged="Menu_SelectionChanged">
+                    <ListBoxItem Name="Home" Background="Lavender">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="36" Text="&#xE80f;"  Margin="0,0,0,0"></TextBlock>
+                            <TextBlock FontSize="24" Margin="10, 0, 0, 0">Current</TextBlock>
+                        </StackPanel>
+                    </ListBoxItem>
+                    <ListBoxItem Name="Forecast" Background="Lavender">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="36" Text="&#xE787;"  Margin="0,0,0,0"></TextBlock>
+                            <TextBlock FontSize="24" Margin="10, 0, 0, 0">Forecast</TextBlock>
+                        </StackPanel>
+                    </ListBoxItem>
+                    <ListBoxItem Name="Search" Background="Lavender">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="36" Text="&#xE909;"  Margin="0,0,0,0"></TextBlock>
+                            <TextBlock FontSize="24" Margin="10, 0, 0, 0">Search</TextBlock>
+                        </StackPanel>
+                    </ListBoxItem>
+                </ListBox>
+            </SplitView.Pane>
+            <SplitView.Content>
+                <Frame Name="MyFrame">
+                </Frame>
+            </SplitView.Content>
+        </SplitView>
+
+
+        <!--
         <StackPanel Margin="0,50,0,0">
             <Button x:Name="button" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Click="button_Click"/>
             <TextBlock x:Name="textBlock" HorizontalAlignment="Left"  TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
@@ -18,5 +75,6 @@
             <TextBlock x:Name="textBlock2">TextBlock</TextBlock>
             <Image x:Name="WeatherImage" Height="150" Width="150"></Image>
         </StackPanel>
+        -->
     </Grid>
 </Page>

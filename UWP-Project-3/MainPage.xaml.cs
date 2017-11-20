@@ -22,8 +22,11 @@ namespace UWP_Project_3
         public MainPage()
         {
             this.InitializeComponent();
+            MyFrame.Navigate(typeof(Home));
+            Home.IsSelected = true;
         }//MainPage
 
+        /*
         //Adapted from https://docs.microsoft.com/en-us/uwp/api/windows.devices.geolocation.geolocator
         //             https://docs.microsoft.com/en-us/windows/uwp/maps-and-location/get-location
         public class locationManager
@@ -81,6 +84,50 @@ namespace UWP_Project_3
             //ref https://msdn.microsoft.com/en-us/library/system.windows.media.imaging.bitmapimage(v=vs.110).aspx
             string icon = String.Format("ms-appx:///Assets/Weather/{0}.png", myWeather.weather[0].icon);
             WeatherImage.Source = new BitmapImage(new Uri(icon, UriKind.Absolute));
+        }
+        */
+
+        //open/close the splitview
+        private void Menu_Click(object sender, RoutedEventArgs e)
+        {
+            MySplitView.IsPaneOpen = !MySplitView.IsPaneOpen;
+        }
+
+        private void RefreshButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        //navigate to pages via splitview
+        private void Menu_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (Home.IsSelected)
+            {
+                MyFrame.Navigate(typeof(Home));
+                TitleTextBlock.Text = "Home";
+                if (MySplitView.IsPaneOpen == true)
+                {
+                    MySplitView.IsPaneOpen = false;
+                }
+            }
+            else if (Forecast.IsSelected)
+            {
+                MyFrame.Navigate(typeof(Forecast));
+                TitleTextBlock.Text = "Forecast";
+                if (MySplitView.IsPaneOpen == true)
+                {
+                    MySplitView.IsPaneOpen = false;
+                }
+            }
+            else if (Search.IsSelected)
+            {
+                MyFrame.Navigate(typeof(Search));
+                TitleTextBlock.Text = "Search";
+                if (MySplitView.IsPaneOpen == true)
+                {
+                    MySplitView.IsPaneOpen = false;
+                }
+            }
         }
     }//main
 }//UWP_Project_3

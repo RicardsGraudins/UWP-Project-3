@@ -132,17 +132,23 @@ namespace UWP_Project_3.UWP_Project_3_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[4];
-            _typeNameTable[0] = "UWP_Project_3.MainPage";
+            _typeNameTable = new string[7];
+            _typeNameTable[0] = "UWP_Project_3.Forecast";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "String";
+            _typeNameTable[3] = "UWP_Project_3.Home";
+            _typeNameTable[4] = "UWP_Project_3.MainPage";
+            _typeNameTable[5] = "String";
+            _typeNameTable[6] = "UWP_Project_3.Search";
 
-            _typeTable = new global::System.Type[4];
-            _typeTable[0] = typeof(global::UWP_Project_3.MainPage);
+            _typeTable = new global::System.Type[7];
+            _typeTable[0] = typeof(global::UWP_Project_3.Forecast);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::System.String);
+            _typeTable[3] = typeof(global::UWP_Project_3.Home);
+            _typeTable[4] = typeof(global::UWP_Project_3.MainPage);
+            _typeTable[5] = typeof(global::System.String);
+            _typeTable[6] = typeof(global::UWP_Project_3.Search);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -177,7 +183,10 @@ namespace UWP_Project_3.UWP_Project_3_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_MainPage() { return new global::UWP_Project_3.MainPage(); }
+        private object Activate_0_Forecast() { return new global::UWP_Project_3.Forecast(); }
+        private object Activate_3_Home() { return new global::UWP_Project_3.Home(); }
+        private object Activate_4_MainPage() { return new global::UWP_Project_3.MainPage(); }
+        private object Activate_6_Search() { return new global::UWP_Project_3.Search(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -189,11 +198,9 @@ namespace UWP_Project_3.UWP_Project_3_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  UWP_Project_3.MainPage
+            case 0:   //  UWP_Project_3.Forecast
                 userType = new global::UWP_Project_3.UWP_Project_3_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_MainPage;
-                userType.AddMemberName("latitudecord");
-                userType.AddMemberName("longitudecord");
+                userType.Activator = Activate_0_Forecast;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -206,8 +213,31 @@ namespace UWP_Project_3.UWP_Project_3_XamlTypeInfo
                 xamlType = new global::UWP_Project_3.UWP_Project_3_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  String
+            case 3:   //  UWP_Project_3.Home
+                userType = new global::UWP_Project_3.UWP_Project_3_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_3_Home;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 4:   //  UWP_Project_3.MainPage
+                userType = new global::UWP_Project_3.UWP_Project_3_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_4_MainPage;
+                userType.AddMemberName("latitudecord");
+                userType.AddMemberName("longitudecord");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 5:   //  String
                 xamlType = new global::UWP_Project_3.UWP_Project_3_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 6:   //  UWP_Project_3.Search
+                userType = new global::UWP_Project_3.UWP_Project_3_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_6_Search;
+                userType.SetIsLocalType();
+                xamlType = userType;
                 break;
             }
             return xamlType;
