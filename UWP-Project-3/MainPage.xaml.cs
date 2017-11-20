@@ -5,6 +5,7 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using System.Diagnostics;
 using static UWP_Project_3.OpenWeatherMap;
+using Windows.UI.Xaml.Media.Imaging;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -77,6 +78,9 @@ namespace UWP_Project_3
             //RootObject myWeather = await OpenWeatherMap.GetWeather(32.77, -97.79);
             //take away 273 from temp to convert to celsius from kelvin
             textBlock2.Text = myWeather.name + " - " + (myWeather.main.temp - 273) + " - " + myWeather.weather[0].description;
+            //ref https://msdn.microsoft.com/en-us/library/system.windows.media.imaging.bitmapimage(v=vs.110).aspx
+            string icon = String.Format("ms-appx:///Assets/Weather/{0}.png", myWeather.weather[0].icon);
+            WeatherImage.Source = new BitmapImage(new Uri(icon, UriKind.Absolute));
         }
     }//main
 }//UWP_Project_3
