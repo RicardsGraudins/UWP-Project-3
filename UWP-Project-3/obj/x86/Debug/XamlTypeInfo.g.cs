@@ -137,8 +137,8 @@ namespace UWP_Project_3.UWP_Project_3_XamlTypeInfo
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
             _typeNameTable[3] = "UWP_Project_3.Home";
-            _typeNameTable[4] = "UWP_Project_3.MainPage";
-            _typeNameTable[5] = "String";
+            _typeNameTable[4] = "String";
+            _typeNameTable[5] = "UWP_Project_3.MainPage";
             _typeNameTable[6] = "UWP_Project_3.Search";
 
             _typeTable = new global::System.Type[7];
@@ -146,8 +146,8 @@ namespace UWP_Project_3.UWP_Project_3_XamlTypeInfo
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
             _typeTable[3] = typeof(global::UWP_Project_3.Home);
-            _typeTable[4] = typeof(global::UWP_Project_3.MainPage);
-            _typeTable[5] = typeof(global::System.String);
+            _typeTable[4] = typeof(global::System.String);
+            _typeTable[5] = typeof(global::UWP_Project_3.MainPage);
             _typeTable[6] = typeof(global::UWP_Project_3.Search);
         }
 
@@ -185,7 +185,7 @@ namespace UWP_Project_3.UWP_Project_3_XamlTypeInfo
 
         private object Activate_0_Forecast() { return new global::UWP_Project_3.Forecast(); }
         private object Activate_3_Home() { return new global::UWP_Project_3.Home(); }
-        private object Activate_4_MainPage() { return new global::UWP_Project_3.MainPage(); }
+        private object Activate_5_MainPage() { return new global::UWP_Project_3.MainPage(); }
         private object Activate_6_Search() { return new global::UWP_Project_3.Search(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
@@ -216,21 +216,21 @@ namespace UWP_Project_3.UWP_Project_3_XamlTypeInfo
             case 3:   //  UWP_Project_3.Home
                 userType = new global::UWP_Project_3.UWP_Project_3_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_3_Home;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 4:   //  UWP_Project_3.MainPage
-                userType = new global::UWP_Project_3.UWP_Project_3_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_4_MainPage;
                 userType.AddMemberName("latitudecord");
                 userType.AddMemberName("longitudecord");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 5:   //  String
+            case 4:   //  String
                 xamlType = new global::UWP_Project_3.UWP_Project_3_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 5:   //  UWP_Project_3.MainPage
+                userType = new global::UWP_Project_3.UWP_Project_3_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_5_MainPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
                 break;
 
             case 6:   //  UWP_Project_3.Search
@@ -244,24 +244,24 @@ namespace UWP_Project_3.UWP_Project_3_XamlTypeInfo
         }
 
 
-        private object get_0_MainPage_latitudecord(object instance)
+        private object get_0_Home_latitudecord(object instance)
         {
-            var that = (global::UWP_Project_3.MainPage)instance;
+            var that = (global::UWP_Project_3.Home)instance;
             return that.latitudecord;
         }
-        private void set_0_MainPage_latitudecord(object instance, object Value)
+        private void set_0_Home_latitudecord(object instance, object Value)
         {
-            var that = (global::UWP_Project_3.MainPage)instance;
+            var that = (global::UWP_Project_3.Home)instance;
             that.latitudecord = (global::System.String)Value;
         }
-        private object get_1_MainPage_longitudecord(object instance)
+        private object get_1_Home_longitudecord(object instance)
         {
-            var that = (global::UWP_Project_3.MainPage)instance;
+            var that = (global::UWP_Project_3.Home)instance;
             return that.longitudecord;
         }
-        private void set_1_MainPage_longitudecord(object instance, object Value)
+        private void set_1_Home_longitudecord(object instance, object Value)
         {
-            var that = (global::UWP_Project_3.MainPage)instance;
+            var that = (global::UWP_Project_3.Home)instance;
             that.longitudecord = (global::System.String)Value;
         }
 
@@ -272,17 +272,17 @@ namespace UWP_Project_3.UWP_Project_3_XamlTypeInfo
 
             switch (longMemberName)
             {
-            case "UWP_Project_3.MainPage.latitudecord":
-                userType = (global::UWP_Project_3.UWP_Project_3_XamlTypeInfo.XamlUserType)GetXamlTypeByName("UWP_Project_3.MainPage");
+            case "UWP_Project_3.Home.latitudecord":
+                userType = (global::UWP_Project_3.UWP_Project_3_XamlTypeInfo.XamlUserType)GetXamlTypeByName("UWP_Project_3.Home");
                 xamlMember = new global::UWP_Project_3.UWP_Project_3_XamlTypeInfo.XamlMember(this, "latitudecord", "String");
-                xamlMember.Getter = get_0_MainPage_latitudecord;
-                xamlMember.Setter = set_0_MainPage_latitudecord;
+                xamlMember.Getter = get_0_Home_latitudecord;
+                xamlMember.Setter = set_0_Home_latitudecord;
                 break;
-            case "UWP_Project_3.MainPage.longitudecord":
-                userType = (global::UWP_Project_3.UWP_Project_3_XamlTypeInfo.XamlUserType)GetXamlTypeByName("UWP_Project_3.MainPage");
+            case "UWP_Project_3.Home.longitudecord":
+                userType = (global::UWP_Project_3.UWP_Project_3_XamlTypeInfo.XamlUserType)GetXamlTypeByName("UWP_Project_3.Home");
                 xamlMember = new global::UWP_Project_3.UWP_Project_3_XamlTypeInfo.XamlMember(this, "longitudecord", "String");
-                xamlMember.Getter = get_1_MainPage_longitudecord;
-                xamlMember.Setter = set_1_MainPage_longitudecord;
+                xamlMember.Getter = get_1_Home_longitudecord;
+                xamlMember.Setter = set_1_Home_longitudecord;
                 break;
             }
             return xamlMember;
