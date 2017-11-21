@@ -95,18 +95,19 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Forecast.xaml.cs">
+    <Compile Include="Model\OpenWeatherMapService.cs" />
+    <Compile Include="ViewModel\Forecast.xaml.cs">
       <DependentUpon>Forecast.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Home.xaml.cs">
+    <Compile Include="ViewModel\Home.xaml.cs">
       <DependentUpon>Home.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MainPage.xaml.cs">
+    <Compile Include="Skeleton\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="OpenWeatherMap.cs" />
+    <Compile Include="Data\OpenWeatherMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Pages\Search.xaml.cs">
+    <Compile Include="ViewModel\Search.xaml.cs">
       <DependentUpon>Search.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -149,19 +150,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="Pages\Forecast.xaml">
+    <Page Include="ViewModel\Forecast.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\Home.xaml">
+    <Page Include="ViewModel\Home.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MainPage.xaml">
+    <Page Include="Skeleton\MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Pages\Search.xaml">
+    <Page Include="ViewModel\Search.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

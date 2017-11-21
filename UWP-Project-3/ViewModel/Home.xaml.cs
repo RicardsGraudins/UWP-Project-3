@@ -1,17 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
 using System.Threading.Tasks;
+using UWP_Project_3.Model;
 using Windows.Devices.Geolocation;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
-using static UWP_Project_3.OpenWeatherMap;
+using static UWP_Project_3.Data.OpenWeatherMap;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -83,7 +78,7 @@ namespace UWP_Project_3
         public async void CurrentWeather()
         {
             var currentPosition = await locationManager.GetPosition();
-            RootObject myWeather = await OpenWeatherMap.GetWeather(currentPosition.Coordinate.Point.Position.Latitude, currentPosition.Coordinate.Point.Position.Longitude);
+            RootObject myWeather = await OpenWeatherMapService.GetWeather(currentPosition.Coordinate.Point.Position.Latitude, currentPosition.Coordinate.Point.Position.Longitude);
             string icon = String.Format("ms-appx:///Assets/Weather/{0}.png", myWeather.weather[0].icon);
             //take away 273.15 from temp to convert to celsius from kelvin
             WeatherBlock.Text = myWeather.name + " - " + (myWeather.main.temp - 273.15) + " - " + myWeather.weather[0].description + " - " + myWeather.weather[0].icon;
