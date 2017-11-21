@@ -11,6 +11,11 @@
         <StackPanel>
             <TextBlock>Forecast Page</TextBlock>
             <TextBlock Name="Status"></TextBlock>
+            <TextBlock Name="ForecastBlock"></TextBlock>
+            <TextBlock Name="ForecastBlock1"></TextBlock>
+            <TextBlock Name="ForecastBlock2"></TextBlock>
+            <TextBlock Name="ForecastBlock3"></TextBlock>
+            <TextBlock Name="ForecastBlock4"></TextBlock>
         </StackPanel>
     </Grid>
 </Page>

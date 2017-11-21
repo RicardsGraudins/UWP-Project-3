@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Diagnostics;
-using System.Threading.Tasks;
 using UWP_Project_3.Model;
-using Windows.Devices.Geolocation;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
@@ -38,46 +35,11 @@ namespace UWP_Project_3
             base.OnNavigatedTo(e);
         }//OnNavigatedTo
 
-        //Adapted from https://docs.microsoft.com/en-us/uwp/api/windows.devices.geolocation.geolocator
-        //             https://docs.microsoft.com/en-us/windows/uwp/maps-and-location/get-location
-        public class locationManager
-        {
-            public async static Task<Geoposition> GetPosition()
-            {
-                try
-                {
-                    var accessStatus = await Geolocator.RequestAccessAsync();
-                    if (accessStatus != GeolocationAccessStatus.Allowed)
-                    {
-                        throw new GPSException("GPS not enabled.");
-                    }
-                    var geolocator = new Geolocator { DesiredAccuracyInMeters = 0 };
-                    var position = await geolocator.GetGeopositionAsync();
-                    return position;
-                }//try
-                catch (GPSException)
-                {
-                    Debug.WriteLine("GPS not enabled.");
-                    return null;
-                }//catch
-            }//GetPosition
-        }//locationManager
-
-        public class GPSException : Exception
-        {
-            public String Message { get; set; }
-
-            public GPSException(String msg)
-            {
-                Message = msg;
-            }
-        }//GPSException
-
         //ref https://msdn.microsoft.com/en-us/library/system.windows.media.imaging.bitmapimage(v=vs.110).aspx
         //    https://stackoverflow.com/questions/32314799/uwp-image-uri-in-application-folder
         public async void CurrentWeather()
         {
-            var currentPosition = await locationManager.GetPosition();
+            var currentPosition = await GeoLocationService.GetPosition();
             RootObject myWeather = await OpenWeatherMapService.GetWeather(currentPosition.Coordinate.Point.Position.Latitude, currentPosition.Coordinate.Point.Position.Longitude);
             string icon = String.Format("ms-appx:///Assets/Weather/{0}.png", myWeather.weather[0].icon);
             //take away 273.15 from temp to convert to celsius from kelvin

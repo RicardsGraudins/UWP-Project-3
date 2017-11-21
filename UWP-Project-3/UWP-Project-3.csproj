@@ -95,6 +95,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Data\OpenWeatherMapForecast.cs" />
+    <Compile Include="Model\GeoLocationService.cs" />
+    <Compile Include="Model\OpenWeatherMapForecastService.cs" />
     <Compile Include="Model\OpenWeatherMapService.cs" />
     <Compile Include="ViewModel\Forecast.xaml.cs">
       <DependentUpon>Forecast.xaml</DependentUpon>
