@@ -13,7 +13,7 @@ namespace UWP_Project_3.Model
         public async static Task<RootObject> GetForecast(double lat, double lon)
         {
             var http = new HttpClient();
-            var url = String.Format("http://api.openweathermap.org/data/2.5/forecast?lat={0}&lon={1}&appid=eb64922b26737fc56879e068cef3ba9b", lat, lon);
+            var url = String.Format("http://api.openweathermap.org/data/2.5/forecast?lat={0}&lon={1}&units=metric&appid=eb64922b26737fc56879e068cef3ba9b", lat, lon);
             var response = await http.GetAsync(url);
             var result = await response.Content.ReadAsStringAsync();
             var serializer = new DataContractJsonSerializer(typeof(RootObject));

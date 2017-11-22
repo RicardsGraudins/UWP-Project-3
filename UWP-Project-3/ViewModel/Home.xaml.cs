@@ -58,7 +58,7 @@ namespace UWP_Project_3
             DescriptionBlock.Text = FirstCharToUpper(myWeather.weather[0].description);
 
             //Display temperature
-            TemperatureBlock.Text = string.Format("{0}", myWeather.main.temp);
+            TemperatureBlock.Text = string.Format("{0}°C", myWeather.main.temp);
 
             //Display wind speed
             WindBlock.Text = string.Format("{0} m/s", myWeather.wind.speed);
@@ -102,7 +102,7 @@ namespace UWP_Project_3
             TideTimeBlock3.Text = tideTime;
 
             //display the station that retrieved worldtides data
-            //api currently not retrieving station
+            //working again...
             WorldTidesStation.Text = string.Format("WorldTides Station: {0}", myTides.station);
         }//CurrentTidesExtreme
 
