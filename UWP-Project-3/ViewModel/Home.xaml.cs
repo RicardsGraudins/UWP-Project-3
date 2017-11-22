@@ -1,11 +1,11 @@
 ﻿using System;
-using System.Linq;
 using UWP_Project_3.Model;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 using static UWP_Project_3.Data.OpenWeatherMap;
 using static UWP_Project_3.Data.WorldTidesExtremes;
+using static UWP_Project_3.Model.SharedMethods;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -16,8 +16,7 @@ namespace UWP_Project_3
     /// </summary>
     public sealed partial class Home : Page
     {
-        public String latitudecord { get; set; }
-        public String longitudecord { get; set; }
+        SharedMethods myMethods = new SharedMethods();
         public Home()
         {
             this.InitializeComponent();
@@ -41,7 +40,6 @@ namespace UWP_Project_3
 
         //ref https://msdn.microsoft.com/en-us/library/system.windows.media.imaging.bitmapimage(v=vs.110).aspx
         //    https://stackoverflow.com/questions/32314799/uwp-image-uri-in-application-folder
-        //    https://stackoverflow.com/questions/16010804/getting-only-time-of-a-datetime-object
         public async void CurrentWeather()
         {
             var currentPosition = await GeoLocationService.GetPosition();
@@ -64,8 +62,8 @@ namespace UWP_Project_3
             WindBlock.Text = string.Format("{0} m/s", myWeather.wind.speed);
 
             //Display time of sunrise and sunset
-            var srTime = getDate(myWeather.sys.sunrise);
-            var ssTime = getDate(myWeather.sys.sunset);
+            var srTime = myMethods.getDate(myWeather.sys.sunrise);
+            var ssTime = myMethods.getDate(myWeather.sys.sunset);
             var sunRise = srTime.ToString("H:mm");
             var sunSet = ssTime.ToString("H:mm");
             SunRiseBlock.Text = string.Format("{0}", sunRise);
@@ -80,10 +78,10 @@ namespace UWP_Project_3
             //WorldTides JSON provides 7 high/low tides - only going to use 4 on this page, ideally 2 high & 2 low for the same day
             //Set variables for the time of high/low tides
             var tideTime = "";
-            var tide = getDate(myTides.extremes[0].dt);
-            var tide1 = getDate(myTides.extremes[1].dt);
-            var tide2 = getDate(myTides.extremes[2].dt);
-            var tide3 = getDate(myTides.extremes[3].dt);
+            var tide = myMethods.getDate(myTides.extremes[0].dt);
+            var tide1 = myMethods.getDate(myTides.extremes[1].dt);
+            var tide2 = myMethods.getDate(myTides.extremes[2].dt);
+            var tide3 = myMethods.getDate(myTides.extremes[3].dt);
 
             //Display tide type - high/low
             TideTypeBlock.Text = myTides.extremes[0].type;
@@ -105,24 +103,5 @@ namespace UWP_Project_3
             //working again...
             WorldTidesStation.Text = string.Format("WorldTides Station: {0}", myTides.station);
         }//CurrentTidesExtreme
-
-        DateTime getDate(double millisecond)
-        {
-            DateTime day = new System.DateTime(1970, 1, 1, 0, 0, 0, 0, System.DateTimeKind.Utc).ToLocalTime();
-            day = day.AddSeconds(millisecond).ToLocalTime();
-
-            return day;
-        }//getDate
-
-        //ref https://stackoverflow.com/questions/4135317/make-first-letter-of-a-string-upper-case-with-maximum-performance
-        public static string FirstCharToUpper(string input)
-        {
-            switch (input)
-            {
-                case null: throw new ArgumentNullException(nameof(input));
-                case "": throw new ArgumentException($"{nameof(input)} cannot be empty", nameof(input));
-                default: return input.First().ToString().ToUpper() + input.Substring(1);
-            }
-        }//FirstCharToUpper
     }//Home
 }//UWP
