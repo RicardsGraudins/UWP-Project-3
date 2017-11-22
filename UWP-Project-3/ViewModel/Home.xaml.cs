@@ -4,6 +4,7 @@ using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 using static UWP_Project_3.Data.OpenWeatherMap;
+using static UWP_Project_3.Data.WorldTidesExtremes;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -27,10 +28,12 @@ namespace UWP_Project_3
             {
                 //loading animaton
                 CurrentWeather();
+                CurrentTidesExtreme();
             }
             else
             {
                 CurrentWeather();
+                CurrentTidesExtreme();
             }
             base.OnNavigatedTo(e);
         }//OnNavigatedTo
@@ -47,5 +50,12 @@ namespace UWP_Project_3
             //WeatherImage.Source = new BitmapImage(new Uri(this.BaseUri, "ms-appx://UWP-Project-3/Assets/Weather/01n.png"));
             WeatherImage.Source = new BitmapImage(new Uri(icon, UriKind.Absolute));
         }//CurrentWeather
+
+        public async void CurrentTidesExtreme()
+        {
+            var currentPosition = await GeoLocationService.GetPosition();
+            RootObjectExtreme myTides = await Model.WorldTidesExtremeService.GetMaxMinTides(currentPosition.Coordinate.Point.Position.Latitude, currentPosition.Coordinate.Point.Position.Longitude);
+            TidesBlock.Text = string.Format("{0}, {1}, {2}", myTides.extremes[0].height, myTides.extremes[0].type, myTides.extremes[0].dt);
+        }//CurrentTidesExtreme
     }//Home
 }//UWP
