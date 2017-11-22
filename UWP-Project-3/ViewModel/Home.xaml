@@ -8,10 +8,97 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <!--
         <StackPanel>
             <Image Name="WeatherImage" Height="150" Width="150"/>
             <TextBlock Name="WeatherBlock"></TextBlock>
             <TextBlock Name="TidesBlock"></TextBlock>
         </StackPanel>
+        -->
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="0" HorizontalAlignment="Center">
+                <Image Name="WeatherImage" Height="200"></Image>
+            </StackPanel>
+            <StackPanel Grid.Row="1">
+                <Grid HorizontalAlignment="Center">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="0" HorizontalAlignment="Center" Margin="0,0,10,0">
+                        <Border BorderThickness="0 0 0 3" BorderBrush="#b8b8c8">
+                            <TextBlock HorizontalAlignment="Center">Location</TextBlock>
+                        </Border>
+                        <Border BorderThickness="0 0 0 3" BorderBrush="#b8b8c8">
+                            <TextBlock HorizontalAlignment="Center">Description</TextBlock>
+                        </Border>
+                        <Border BorderThickness="0 0 0 3" BorderBrush="#b8b8c8">
+                            <TextBlock HorizontalAlignment="Center">Temperature</TextBlock>
+                        </Border>
+                        <Border BorderThickness="0 0 0 3" BorderBrush="#b8b8c8">
+                            <TextBlock HorizontalAlignment="Center">Wind Speed</TextBlock>
+                        </Border>
+                        <Border BorderThickness="0 0 0 3" BorderBrush="#b8b8c8">
+                            <TextBlock HorizontalAlignment="Center" Margin="0,10,0,0">Sun Rise</TextBlock>
+                        </Border>
+                        <Border BorderThickness="0 0 0 3" BorderBrush="#b8b8c8">
+                            <TextBlock HorizontalAlignment="Center">Sun Set</TextBlock>
+                        </Border>
+                        <Border BorderThickness="0 0 0 3" BorderBrush="#b8b8c8">
+                            <TextBlock Name="TideTypeBlock" Margin="0,10,0,0" HorizontalAlignment="Center">High/Low</TextBlock>
+                        </Border>
+                        <Border BorderThickness="0 0 0 3" BorderBrush="#b8b8c8">
+                            <TextBlock Name="TideTypeBlock1" HorizontalAlignment="Center">High/Low</TextBlock>
+                        </Border>
+                        <Border BorderThickness="0 0 0 3" BorderBrush="#b8b8c8">
+                            <TextBlock Name="TideTypeBlock2" HorizontalAlignment="Center">High/Low</TextBlock>
+                        </Border>
+                        <Border BorderThickness="0 0 0 3" BorderBrush="#b8b8c8">
+                            <TextBlock Name="TideTypeBlock3" HorizontalAlignment="Center">High/Low</TextBlock>
+                        </Border>
+                    </StackPanel>
+
+                    <StackPanel Grid.Column="1" HorizontalAlignment="Center">
+                        <Border BorderThickness="0 0 0 3" BorderBrush="#b8b8c8">
+                            <TextBlock Name="LocationBlock" HorizontalAlignment="Center">WeatherBlock</TextBlock>
+                        </Border>
+                        <Border BorderThickness="0 0 0 3" BorderBrush="#b8b8c8">
+                            <TextBlock Name="DescriptionBlock" HorizontalAlignment="Center">DescriptionBlock</TextBlock>
+                        </Border>
+                        <Border BorderThickness="0 0 0 3" BorderBrush="#b8b8c8">
+                            <TextBlock Name="TemperatureBlock" HorizontalAlignment="Center">TemperatureBlock</TextBlock>
+                        </Border>
+                        <Border BorderThickness="0 0 0 3" BorderBrush="#b8b8c8">
+                            <TextBlock Name="WindBlock" HorizontalAlignment="Center">WindBlock</TextBlock>
+                        </Border>
+                        <Border BorderThickness="0 0 0 3" BorderBrush="#b8b8c8">
+                            <TextBlock Name="SunRiseBlock" HorizontalAlignment="Center" Margin="0,10,0,0">SunRiseBlock</TextBlock>
+                        </Border>
+                        <Border BorderThickness="0 0 0 3" BorderBrush="#b8b8c8">
+                            <TextBlock Name="SunSetBlock" HorizontalAlignment="Center">SunSetBlock</TextBlock>
+                        </Border>
+                        <Border BorderThickness="0 0 0 3" BorderBrush="#b8b8c8">
+                            <TextBlock Name="TideTimeBlock" Margin="0,10,0,0" HorizontalAlignment="Center">TideTimeBlock</TextBlock>
+                        </Border>
+                        <Border BorderThickness="0 0 0 3" BorderBrush="#b8b8c8">
+                            <TextBlock Name="TideTimeBlock1" HorizontalAlignment="Center">TideTimeBlock</TextBlock>
+                        </Border>
+                        <Border BorderThickness="0 0 0 3" BorderBrush="#b8b8c8">
+                            <TextBlock Name="TideTimeBlock2" HorizontalAlignment="Center">TideTimeBlock</TextBlock>
+                        </Border>
+                        <Border BorderThickness="0 0 0 3" BorderBrush="#b8b8c8">
+                            <TextBlock Name="TideTimeBlock3" HorizontalAlignment="Center">TideTimeBlock</TextBlock>
+                        </Border>
+                    </StackPanel>
+                </Grid>
+            </StackPanel>
+            <TextBlock Name="WorldTidesStation" VerticalAlignment="Bottom" HorizontalAlignment="Left" Grid.Row="2" FontStyle="Italic" FontSize="12">WorldTides Station:</TextBlock>
+        </Grid>
     </Grid>
 </Page>
