@@ -57,7 +57,7 @@ namespace UWP_Project_3.Data
             public double speed { get; set; }
 
             [DataMember]
-            public int deg { get; set; }
+            public double deg { get; set; }
         }
 
         [DataContract]
