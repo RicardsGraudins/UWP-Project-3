@@ -1,16 +1,54 @@
 ﻿<Page
-    x:Class="UWP_Project_3.Search"
+    x:Class="UWP_Project_3.ViewModel.Search"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:UWP_Project_3"
+    xmlns:local="using:UWP_Project_3.ViewModel"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <StackPanel>
-            <TextBlock>Search Page</TextBlock>
-            <TextBlock Name="Status"></TextBlock>
+            <TextBlock FontWeight="Bold" FontSize="20" TextWrapping="WrapWholeWords">Note: Forecast search is currently only available for Ireland.</TextBlock>
+            <Grid Margin="0,20,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="0">
+                    <TextBlock Name="cityName" HorizontalAlignment="Center">Select County:</TextBlock>
+                </StackPanel>
+                <StackPanel Grid.Column="1" HorizontalAlignment="Center">
+                    <ComboBox Name="cityInput" Width="Auto" SelectionChanged="cityInput_SelectionChanged" ScrollViewer.HorizontalScrollBarVisibility="Hidden" ScrollViewer.VerticalScrollBarVisibility="Hidden">
+                        <ComboBoxItem>Carlow</ComboBoxItem>
+                        <ComboBoxItem>Cavan</ComboBoxItem>
+                        <ComboBoxItem>Clare</ComboBoxItem>
+                        <ComboBoxItem>Cork</ComboBoxItem>
+                        <ComboBoxItem>Donegal</ComboBoxItem>
+                        <ComboBoxItem>Dublin</ComboBoxItem>
+                        <ComboBoxItem>Galway</ComboBoxItem>
+                        <ComboBoxItem>Kerry</ComboBoxItem>
+                        <ComboBoxItem>Kildare</ComboBoxItem>
+                        <ComboBoxItem>Kilkenny</ComboBoxItem>
+                        <ComboBoxItem>Laois</ComboBoxItem>
+                        <ComboBoxItem>Leitrim</ComboBoxItem>
+                        <ComboBoxItem>Limerick</ComboBoxItem>
+                        <ComboBoxItem>Longford</ComboBoxItem>
+                        <ComboBoxItem>Louth</ComboBoxItem>
+                        <ComboBoxItem>Mayo</ComboBoxItem>
+                        <ComboBoxItem>Meath</ComboBoxItem>
+                        <ComboBoxItem>Monaghan</ComboBoxItem>
+                        <ComboBoxItem>Offaly</ComboBoxItem>
+                        <ComboBoxItem>Roscommon</ComboBoxItem>
+                        <ComboBoxItem>Sligo</ComboBoxItem>
+                        <ComboBoxItem>Tipperary</ComboBoxItem>
+                        <ComboBoxItem>Waterford</ComboBoxItem>
+                        <ComboBoxItem>Westmeath</ComboBoxItem>
+                        <ComboBoxItem>Wexford</ComboBoxItem>
+                        <ComboBoxItem>Wicklow</ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+            </Grid>
         </StackPanel>
     </Grid>
 </Page>

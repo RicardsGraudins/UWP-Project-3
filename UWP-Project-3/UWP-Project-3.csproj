@@ -105,6 +105,9 @@
     <Compile Include="ViewModel\Forecast.xaml.cs">
       <DependentUpon>Forecast.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModel\ForecastCity.xaml.cs">
+      <DependentUpon>ForecastCity.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModel\Home.xaml.cs">
       <DependentUpon>Home.xaml</DependentUpon>
     </Compile>
@@ -157,6 +160,10 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Page Include="ViewModel\Forecast.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewModel\ForecastCity.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

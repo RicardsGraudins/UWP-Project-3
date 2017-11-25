@@ -1,6 +1,6 @@
-﻿using Windows.UI.Xaml.Controls;
+﻿using System;
+using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
-using System;
 using UWP_Project_3.Model;
 using Windows.UI.Xaml.Media.Imaging;
 using static UWP_Project_3.Data.OpenWeatherMapForecast;
@@ -8,15 +8,15 @@ using static UWP_Project_3.Model.SharedMethods;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
-namespace UWP_Project_3
+namespace UWP_Project_3.ViewModel
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class Forecast : Page
+    public sealed partial class ForecastCity : Page
     {
         SharedMethods myMethods = new SharedMethods();
-        public Forecast()
+        public ForecastCity()
         {
             this.InitializeComponent();
         }
@@ -25,21 +25,22 @@ namespace UWP_Project_3
         {
             if (e.Parameter is string && !string.IsNullOrWhiteSpace((string)e.Parameter))
             {
-                ForecastWeather();
+                //OnNavigatedTo with parameter display the forecast
+                string city = e.Parameter.ToString();
+                ForecastWeatherSearch(city);
             }
             else
             {
-                ForecastWeather();
+                //ForecastWeatherSearch(city);
             }
             base.OnNavigatedTo(e);
         }//OnNavigatedTo
 
-        public async void ForecastWeather()
+        public async void ForecastWeatherSearch(string city)
         {
-            var currentPosition = await GeoLocationService.GetPosition();
-            RootObject myForecast = await Model.OpenWeatherMapForecastService.GetForecast(currentPosition.Coordinate.Point.Position.Latitude, currentPosition.Coordinate.Point.Position.Longitude);
+            string country = "IE";
+            RootObject myForecast = await Model.OpenWeatherMapForecastService.GetForecastSearch(city, country);
 
-            //Setting & displaying date
             var date0 = myMethods.getDate(myForecast.list[0].dt);
             var date0String = date0.ToString("ddd dd MMM");
             Date0.Text = date0String;
@@ -634,6 +635,6 @@ namespace UWP_Project_3
             HPA38.Text = string.Format("{0} hPA", myForecast.list[38].main.pressure);
             //HPA39.Text = string.Format("{0} hPA", myForecast.list[39].main.pressure);
             //HPA40.Text = string.Format("{0} hPA", myForecast.list[40].main.pressure);
-        }//ForecastWeather
-    }//Forecast
+        }//ForecastWeatherSearch
+    }//ForecastCity
 }//UWP
