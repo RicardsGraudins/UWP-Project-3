@@ -8,7 +8,7 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <ScrollViewer HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden">
+        <ScrollViewer>
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="200"></RowDefinition>
@@ -91,7 +91,9 @@
                         </StackPanel>
                     </Grid>
                 </StackPanel>
-                <TextBlock Name="WorldTidesStation" VerticalAlignment="Bottom" HorizontalAlignment="Left" Grid.Row="2" FontStyle="Italic" FontSize="12">WorldTides Station:</TextBlock>
+                <StackPanel Grid.Row="2">
+                    <TextBlock Name="WorldTidesStation" VerticalAlignment="Bottom" HorizontalAlignment="Left" FontStyle="Italic" FontSize="12">WorldTides Station: Undefined</TextBlock>
+                </StackPanel>
             </Grid>
         </ScrollViewer>
     </Grid>

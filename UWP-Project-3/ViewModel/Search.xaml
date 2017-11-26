@@ -9,7 +9,7 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <StackPanel>
-            <TextBlock FontWeight="Bold" FontSize="20" TextWrapping="WrapWholeWords">Note: Forecast search is currently only available for Ireland.</TextBlock>
+            <TextBlock FontWeight="Bold" FontSize="20" TextWrapping="WrapWholeWords">Note: Weather forecast search is currently only available for Ireland.</TextBlock>
             <Grid Margin="0,20,0,0">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition></ColumnDefinition>
@@ -20,6 +20,46 @@
                 </StackPanel>
                 <StackPanel Grid.Column="1" HorizontalAlignment="Center">
                     <ComboBox Name="cityInput" Width="Auto" SelectionChanged="cityInput_SelectionChanged" ScrollViewer.HorizontalScrollBarVisibility="Hidden" ScrollViewer.VerticalScrollBarVisibility="Hidden">
+                        <ComboBoxItem>Carlow</ComboBoxItem>
+                        <ComboBoxItem>Cavan</ComboBoxItem>
+                        <ComboBoxItem>Clare</ComboBoxItem>
+                        <ComboBoxItem>Cork</ComboBoxItem>
+                        <ComboBoxItem>Donegal</ComboBoxItem>
+                        <ComboBoxItem>Dublin</ComboBoxItem>
+                        <ComboBoxItem>Galway</ComboBoxItem>
+                        <ComboBoxItem>Kerry</ComboBoxItem>
+                        <ComboBoxItem>Kildare</ComboBoxItem>
+                        <ComboBoxItem>Kilkenny</ComboBoxItem>
+                        <ComboBoxItem>Laois</ComboBoxItem>
+                        <ComboBoxItem>Leitrim</ComboBoxItem>
+                        <ComboBoxItem>Limerick</ComboBoxItem>
+                        <ComboBoxItem>Longford</ComboBoxItem>
+                        <ComboBoxItem>Louth</ComboBoxItem>
+                        <ComboBoxItem>Mayo</ComboBoxItem>
+                        <ComboBoxItem>Meath</ComboBoxItem>
+                        <ComboBoxItem>Monaghan</ComboBoxItem>
+                        <ComboBoxItem>Offaly</ComboBoxItem>
+                        <ComboBoxItem>Roscommon</ComboBoxItem>
+                        <ComboBoxItem>Sligo</ComboBoxItem>
+                        <ComboBoxItem>Tipperary</ComboBoxItem>
+                        <ComboBoxItem>Waterford</ComboBoxItem>
+                        <ComboBoxItem>Westmeath</ComboBoxItem>
+                        <ComboBoxItem>Wexford</ComboBoxItem>
+                        <ComboBoxItem>Wicklow</ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+            </Grid>
+            <TextBlock FontWeight="Bold" FontSize="20" TextWrapping="WrapWholeWords" Margin="0,20,0,0">Note: Tide forecast search is currently only available for Ireland.</TextBlock>
+            <Grid Margin="0,20,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="0">
+                    <TextBlock Name="cityName2" HorizontalAlignment="Center">Select County:</TextBlock>
+                </StackPanel>
+                <StackPanel Grid.Column="1" HorizontalAlignment="Center">
+                    <ComboBox Name="cityInput2" Width="Auto" SelectionChanged="cityInput2_SelectionChanged" ScrollViewer.HorizontalScrollBarVisibility="Hidden" ScrollViewer.VerticalScrollBarVisibility="Hidden">
                         <ComboBoxItem>Carlow</ComboBoxItem>
                         <ComboBoxItem>Cavan</ComboBoxItem>
                         <ComboBoxItem>Clare</ComboBoxItem>

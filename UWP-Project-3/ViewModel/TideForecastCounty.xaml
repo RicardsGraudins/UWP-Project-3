@@ -1,0 +1,166 @@
+﻿<Page
+    x:Class="UWP_Project_3.ViewModel.TideForecastCounty"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UWP_Project_3.ViewModel"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <ScrollViewer>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60"></RowDefinition>
+                    <RowDefinition Height="60"></RowDefinition>
+                    <RowDefinition Height="60"></RowDefinition>
+                    <RowDefinition Height="60"></RowDefinition>
+                    <RowDefinition Height="60"></RowDefinition>
+                    <RowDefinition Height="60"></RowDefinition>
+                    <RowDefinition Height="60"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <StackPanel Background="Pink" Grid.Column="0" Grid.Row="0" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
+                    <Border Height="30">
+                        <TextBlock Name="Date0" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                    </Border>
+                    <Border Height="29">
+                        <TextBlock Name="Time0" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
+                    </Border>
+                </StackPanel>
+                <StackPanel Background="PeachPuff" Grid.Column="1" Grid.Row="0" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
+                    <Border Height="59">
+                        <TextBlock Name="Tide0" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                    </Border>
+                </StackPanel>
+                <StackPanel Background="Pink" Grid.Column="2" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
+                    <Border Height="59">
+                        <TextBlock Name="Height0" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                    </Border>
+                </StackPanel>
+                <!-- 0 end -->
+                <StackPanel Background="Pink" Grid.Column="0" Grid.Row="1" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
+                    <Border Height="30">
+                        <TextBlock Name="Date1" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                    </Border>
+                    <Border Height="29">
+                        <TextBlock Name="Time1" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
+                    </Border>
+                </StackPanel>
+                <StackPanel Background="PeachPuff" Grid.Column="1" Grid.Row="1" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
+                    <Border Height="59">
+                        <TextBlock Name="Tide1" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                    </Border>
+                </StackPanel>
+                <StackPanel Background="Pink" Grid.Column="2" Grid.Row="1" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
+                    <Border Height="59">
+                        <TextBlock Name="Height1" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                    </Border>
+                </StackPanel>
+                <!-- 1 end -->
+                <StackPanel Background="Pink" Grid.Column="0" Grid.Row="2" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
+                    <Border Height="30">
+                        <TextBlock Name="Date2" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                    </Border>
+                    <Border Height="29">
+                        <TextBlock Name="Time2" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
+                    </Border>
+                </StackPanel>
+                <StackPanel Background="PeachPuff" Grid.Column="1" Grid.Row="2" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
+                    <Border Height="59">
+                        <TextBlock Name="Tide2" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                    </Border>
+                </StackPanel>
+                <StackPanel Background="Pink" Grid.Column="2" Grid.Row="2" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
+                    <Border Height="59">
+                        <TextBlock Name="Height2" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                    </Border>
+                </StackPanel>
+                <!-- 2 end -->
+                <StackPanel Background="Pink" Grid.Column="0" Grid.Row="3" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
+                    <Border Height="30">
+                        <TextBlock Name="Date3" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                    </Border>
+                    <Border Height="29">
+                        <TextBlock Name="Time3" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
+                    </Border>
+                </StackPanel>
+                <StackPanel Background="PeachPuff" Grid.Column="1" Grid.Row="3" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
+                    <Border Height="59">
+                        <TextBlock Name="Tide3" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                    </Border>
+                </StackPanel>
+                <StackPanel Background="Pink" Grid.Column="2" Grid.Row="3" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
+                    <Border Height="59">
+                        <TextBlock Name="Height3" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                    </Border>
+                </StackPanel>
+                <!-- 3 end -->
+                <StackPanel Background="Pink" Grid.Column="0" Grid.Row="4" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
+                    <Border Height="30">
+                        <TextBlock Name="Date4" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                    </Border>
+                    <Border Height="29">
+                        <TextBlock Name="Time4" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
+                    </Border>
+                </StackPanel>
+                <StackPanel Background="PeachPuff" Grid.Column="1" Grid.Row="4" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
+                    <Border Height="59">
+                        <TextBlock Name="Tide4" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                    </Border>
+                </StackPanel>
+                <StackPanel Background="Pink" Grid.Column="2" Grid.Row="4" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
+                    <Border Height="59">
+                        <TextBlock Name="Height4" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                    </Border>
+                </StackPanel>
+                <!-- 4 end -->
+                <StackPanel Background="Pink" Grid.Column="0" Grid.Row="5" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
+                    <Border Height="30">
+                        <TextBlock Name="Date5" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                    </Border>
+                    <Border Height="29">
+                        <TextBlock Name="Time5" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
+                    </Border>
+                </StackPanel>
+                <StackPanel Background="PeachPuff" Grid.Column="1" Grid.Row="5" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
+                    <Border Height="59">
+                        <TextBlock Name="Tide5" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                    </Border>
+                </StackPanel>
+                <StackPanel Background="Pink" Grid.Column="2" Grid.Row="5" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
+                    <Border Height="59">
+                        <TextBlock Name="Height5" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                    </Border>
+                </StackPanel>
+                <!-- 5 end -->
+                <!-- 4 end -->
+                <StackPanel Background="Pink" Grid.Column="0" Grid.Row="6" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
+                    <Border Height="30">
+                        <TextBlock Name="Date6" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                    </Border>
+                    <Border Height="29">
+                        <TextBlock Name="Time6" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
+                    </Border>
+                </StackPanel>
+                <StackPanel Background="PeachPuff" Grid.Column="1" Grid.Row="6" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
+                    <Border Height="59">
+                        <TextBlock Name="Tide6" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                    </Border>
+                </StackPanel>
+                <StackPanel Background="Pink" Grid.Column="2" Grid.Row="6" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
+                    <Border Height="59">
+                        <TextBlock Name="Height6" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                    </Border>
+                </StackPanel>
+                <!-- 6 end -->
+                <TextBlock Name="WorldTidesStation" VerticalAlignment="Bottom" HorizontalAlignment="Left" Grid.Row="7" FontStyle="Italic" FontSize="12">WorldTides Station: Undefined</TextBlock>
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+</Page>
