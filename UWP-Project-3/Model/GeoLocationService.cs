@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using System.Threading.Tasks;
 using Windows.Devices.Geolocation;
+using Windows.System;
 
 namespace UWP_Project_3.Model
 {
@@ -21,17 +22,17 @@ namespace UWP_Project_3.Model
                 var geolocator = new Geolocator { DesiredAccuracyInMeters = 0 };
                 var position = await geolocator.GetGeopositionAsync();
                 return position;
-            }//try
+            }//Try
             catch (GPSException)
             {
                 Debug.WriteLine("GPS not enabled.");
                 return null;
-            }//catch
+            }//Catch
         }//GetPosition
 
         public class GPSException : Exception
         {
-            public String Message { get; set; }
+            override public String Message { get;}
 
             public GPSException(String msg)
             {

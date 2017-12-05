@@ -2,13 +2,8 @@
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
-
 namespace UWP_Project_3
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
     public sealed partial class MainPage : Page
     {
         public MainPage()
@@ -18,7 +13,7 @@ namespace UWP_Project_3
             Home.IsSelected = true;
         }//MainPage
 
-        //open/close the splitview
+        //Open/close the splitview
         private void Menu_Click(object sender, RoutedEventArgs e)
         {
             MySplitView.IsPaneOpen = !MySplitView.IsPaneOpen;
@@ -26,7 +21,7 @@ namespace UWP_Project_3
 
         private void RefreshButton_Click(object sender, RoutedEventArgs e)
         {
-            //refresh data on the selected page
+            //Refresh data on the selected page
             if (Home.IsSelected)
             {
                 MyFrame.Navigate(typeof(Home), "a");
@@ -41,7 +36,7 @@ namespace UWP_Project_3
             }
         }//RefreshButton_Click
 
-        //navigate to pages via splitview
+        //Navigate to pages via splitview
         private void Menu_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (Home.IsSelected)
@@ -72,5 +67,5 @@ namespace UWP_Project_3
                 }
             }
         }//Menu_SelectionChanged
-    }//main
+    }//Main
 }//UWP_Project_3

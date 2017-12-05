@@ -1,27 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
 using UWP_Project_3.Model;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using static UWP_Project_3.Data.WorldTidesExtremes;
 
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
-
 namespace UWP_Project_3.ViewModel
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
     public sealed partial class TideForecastCounty : Page
     {
         SharedMethods myMethods = new SharedMethods();
@@ -41,7 +25,7 @@ namespace UWP_Project_3.ViewModel
 
                 Date0.Text = county;
 
-                //lat/lon cords taken from google
+                //Lat & lon cords taken from google
                 switch (county)
                 {
                     case "Carlow":
@@ -202,86 +186,91 @@ namespace UWP_Project_3.ViewModel
 
                     default:
                         break;
-                }//switch
-
-                //ForecastWeatherSearch(county);
+                }//Switch
             }
             else
             {
-                //ForecastWeatherSearch(city);
+                //Do nothing
             }
             base.OnNavigatedTo(e);
         }//OnNavigatedTo
 
         public async void ForecastTides(double lat, double lon)
         {
-            RootObjectExtreme myTides = await Model.WorldTidesExtremeService.GetMaxMinTides(lat, lon);
-
-            var tideTime = "";
-            var tide = myMethods.getDate(myTides.extremes[0].dt);
-            var tide1 = myMethods.getDate(myTides.extremes[1].dt);
-            var tide2 = myMethods.getDate(myTides.extremes[2].dt);
-            var tide3 = myMethods.getDate(myTides.extremes[3].dt);
-            var tide4 = myMethods.getDate(myTides.extremes[4].dt);
-            var tide5 = myMethods.getDate(myTides.extremes[5].dt);
-            var tide6 = myMethods.getDate(myTides.extremes[6].dt);
-
-            //Display tide date
-            tideTime = tide.ToString("ddd dd MMM");
-            Date0.Text = tideTime;
-            tideTime = tide1.ToString("ddd dd MMM");
-            Date1.Text = tideTime;
-            tideTime = tide2.ToString("ddd dd MMM");
-            Date2.Text = tideTime;
-            tideTime = tide3.ToString("ddd dd MMM");
-            Date3.Text = tideTime;
-            tideTime = tide4.ToString("ddd dd MMM");
-            Date4.Text = tideTime;
-            tideTime = tide5.ToString("ddd dd MMM");
-            Date5.Text = tideTime;
-            tideTime = tide6.ToString("ddd dd MMM");
-            Date6.Text = tideTime;
-
-            //Display the time of high/low tides
-            tideTime = tide.ToString("t");
-            Time0.Text = tideTime;
-            tideTime = tide1.ToString("t");
-            Time1.Text = tideTime;
-            tideTime = tide2.ToString("t");
-            Time2.Text = tideTime;
-            tideTime = tide3.ToString("t");
-            Time3.Text = tideTime;
-            tideTime = tide4.ToString("t");
-            Time4.Text = tideTime;
-            tideTime = tide5.ToString("t");
-            Time5.Text = tideTime;
-            tideTime = tide6.ToString("t");
-            Time6.Text = tideTime;
-
-            //Display tide type
-            Tide0.Text = myTides.extremes[0].type;
-            Tide1.Text = myTides.extremes[1].type;
-            Tide2.Text = myTides.extremes[2].type;
-            Tide3.Text = myTides.extremes[3].type;
-            Tide4.Text = myTides.extremes[4].type;
-            Tide5.Text = myTides.extremes[5].type;
-            Tide6.Text = myTides.extremes[6].type;
-
-            //Display tide height
-            Height0.Text = String.Format("{0} m", myTides.extremes[0].height);
-            Height1.Text = String.Format("{0} m", myTides.extremes[1].height);
-            Height2.Text = String.Format("{0} m", myTides.extremes[2].height);
-            Height3.Text = String.Format("{0} m", myTides.extremes[3].height);
-            Height4.Text = String.Format("{0} m", myTides.extremes[4].height);
-            Height5.Text = String.Format("{0} m", myTides.extremes[5].height);
-            Height6.Text = String.Format("{0} m", myTides.extremes[6].height);
-
-            WorldTidesStation.Text = "WorldTides Station: Undefined";
-
-            if (myTides.station != null)
+            try
             {
-                WorldTidesStation.Text = string.Format("WorldTides Station: {0}", myTides.station);
-            }
+                RootObjectExtreme myTides = await Model.WorldTidesExtremeService.GetMaxMinTides(lat, lon);
+
+                var tideTime = "";
+                var tide = myMethods.getDate(myTides.extremes[0].dt);
+                var tide1 = myMethods.getDate(myTides.extremes[1].dt);
+                var tide2 = myMethods.getDate(myTides.extremes[2].dt);
+                var tide3 = myMethods.getDate(myTides.extremes[3].dt);
+                var tide4 = myMethods.getDate(myTides.extremes[4].dt);
+                var tide5 = myMethods.getDate(myTides.extremes[5].dt);
+                var tide6 = myMethods.getDate(myTides.extremes[6].dt);
+
+                //Display tide date
+                tideTime = tide.ToString("ddd dd MMM");
+                Date0.Text = tideTime;
+                tideTime = tide1.ToString("ddd dd MMM");
+                Date1.Text = tideTime;
+                tideTime = tide2.ToString("ddd dd MMM");
+                Date2.Text = tideTime;
+                tideTime = tide3.ToString("ddd dd MMM");
+                Date3.Text = tideTime;
+                tideTime = tide4.ToString("ddd dd MMM");
+                Date4.Text = tideTime;
+                tideTime = tide5.ToString("ddd dd MMM");
+                Date5.Text = tideTime;
+                tideTime = tide6.ToString("ddd dd MMM");
+                Date6.Text = tideTime;
+
+                //Display the time of high/low tides
+                tideTime = tide.ToString("t");
+                Time0.Text = tideTime;
+                tideTime = tide1.ToString("t");
+                Time1.Text = tideTime;
+                tideTime = tide2.ToString("t");
+                Time2.Text = tideTime;
+                tideTime = tide3.ToString("t");
+                Time3.Text = tideTime;
+                tideTime = tide4.ToString("t");
+                Time4.Text = tideTime;
+                tideTime = tide5.ToString("t");
+                Time5.Text = tideTime;
+                tideTime = tide6.ToString("t");
+                Time6.Text = tideTime;
+
+                //Display tide type
+                Tide0.Text = myTides.extremes[0].type;
+                Tide1.Text = myTides.extremes[1].type;
+                Tide2.Text = myTides.extremes[2].type;
+                Tide3.Text = myTides.extremes[3].type;
+                Tide4.Text = myTides.extremes[4].type;
+                Tide5.Text = myTides.extremes[5].type;
+                Tide6.Text = myTides.extremes[6].type;
+
+                //Display tide height
+                Height0.Text = String.Format("{0} m", myTides.extremes[0].height);
+                Height1.Text = String.Format("{0} m", myTides.extremes[1].height);
+                Height2.Text = String.Format("{0} m", myTides.extremes[2].height);
+                Height3.Text = String.Format("{0} m", myTides.extremes[3].height);
+                Height4.Text = String.Format("{0} m", myTides.extremes[4].height);
+                Height5.Text = String.Format("{0} m", myTides.extremes[5].height);
+                Height6.Text = String.Format("{0} m", myTides.extremes[6].height);
+
+                WorldTidesStation.Text = "WorldTides Station: Undefined";
+
+                if (myTides.station != null)
+                {
+                    WorldTidesStation.Text = string.Format("WorldTides Station: {0}", myTides.station);
+                }
+            }//Try
+            catch
+            {
+                myMethods.WorldTidesError();
+            }//Catch
         }//ForecastTides
     }//TideForecastCounty
 }//UWP

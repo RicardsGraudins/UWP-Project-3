@@ -1,17 +1,17 @@
-﻿using Windows.UI.Xaml.Controls;
+﻿using System;
+using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
-using System;
 using UWP_Project_3.Model;
 using Windows.UI.Xaml.Media.Imaging;
 using static UWP_Project_3.Data.OpenWeatherMapForecast;
 using static UWP_Project_3.Model.SharedMethods;
 
-namespace UWP_Project_3
+namespace UWP_Project_3.ViewModel
 {
-    public sealed partial class Forecast : Page
+    public sealed partial class WeatherForecastCounty : Page
     {
         SharedMethods myMethods = new SharedMethods();
-        public Forecast()
+        public WeatherForecastCounty()
         {
             this.InitializeComponent();
         }
@@ -20,21 +20,22 @@ namespace UWP_Project_3
         {
             if (e.Parameter is string && !string.IsNullOrWhiteSpace((string)e.Parameter))
             {
-                ForecastWeather();
+                //OnNavigatedTo with parameter display the forecast
+                string county = e.Parameter.ToString();
+                ForecastWeatherSearch(county);
             }
             else
             {
-                ForecastWeather();
             }
             base.OnNavigatedTo(e);
         }//OnNavigatedTo
 
-        public async void ForecastWeather()
+        public async void ForecastWeatherSearch(string county)
         {
             try
             {
-                var currentPosition = await GeoLocationService.GetPosition();
-                RootObject myForecast = await Model.OpenWeatherMapForecastService.GetForecast(currentPosition.Coordinate.Point.Position.Latitude, currentPosition.Coordinate.Point.Position.Longitude);
+                string country = "IE";
+                RootObject myForecast = await Model.OpenWeatherMapForecastService.GetForecastSearch(county, country);
 
                 //Set labels
                 Label00.Text = "Wind:";
@@ -115,9 +116,7 @@ namespace UWP_Project_3
                 Label75.Text = "Clouds:";
                 Label76.Text = "Clouds:";
                 Label77.Text = "Clouds:";
-                //Clouds
 
-                //Setting & displaying date
                 var date0 = myMethods.getDate(myForecast.list[0].dt);
                 var date0String = date0.ToString("ddd dd MMM");
                 Date0.Text = date0String;
@@ -395,8 +394,6 @@ namespace UWP_Project_3
                 string icon36 = String.Format("ms-appx:///Assets/Weather/{0}.png", myForecast.list[36].weather[0].icon);
                 string icon37 = String.Format("ms-appx:///Assets/Weather/{0}.png", myForecast.list[37].weather[0].icon);
                 string icon38 = String.Format("ms-appx:///Assets/Weather/{0}.png", myForecast.list[38].weather[0].icon);
-
-
 
                 //Displaying Images
                 WeatherImage0.Source = new BitmapImage(new Uri(icon0, UriKind.Absolute));
@@ -687,8 +684,8 @@ namespace UWP_Project_3
             }//Try
             catch
             {
-                myMethods.EnableGPSDialog();
-            }//Catch
-        }//ForecastWeather
-    }//Forecast
+                myMethods.OpenWeatherMapError();
+            }
+        }//ForecastWeatherSearch
+    }//WeatherForecastCounty
 }//UWP

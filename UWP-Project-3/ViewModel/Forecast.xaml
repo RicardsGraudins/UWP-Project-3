@@ -55,19 +55,15 @@
                     <RowDefinition Height="60"></RowDefinition>
                     <RowDefinition Height="60"></RowDefinition>
                     <RowDefinition Height="60"></RowDefinition>
-                    <!--
-                    <RowDefinition Height="60"></RowDefinition>
-                    <RowDefinition Height="60"></RowDefinition>
-                    -->
                     <RowDefinition Height="1"></RowDefinition>
                 </Grid.RowDefinitions>
 
                 <StackPanel Background="Pink" Grid.Column="0" Grid.Row="0" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
                     <Border Height="30">
-                        <TextBlock Name="Date0" HorizontalAlignment="Center" VerticalAlignment="Center">Tue 21 Nov</TextBlock>
+                        <TextBlock Name="Date0" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
                     </Border>
                     <Border Height="29">
-                        <TextBlock Name="Time0" HorizontalAlignment="Center" VerticalAlignment="Top">12:00 PM</TextBlock>
+                        <TextBlock Name="Time0" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
                     </Border>
                 </StackPanel>
                 <StackPanel Background="PeachPuff" Grid.Column="1" Grid.Row="0" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
@@ -88,27 +84,27 @@
                             <ColumnDefinition Width="Auto"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <StackPanel Grid.Row="0" Grid.Column="0" Background="Orange" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="0,2,2,2">
-                            <TextBlock Name="MaxTemp0">13.4 C</TextBlock>
+                            <TextBlock Name="MaxTemp0"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center">Wind:</TextBlock>
-                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom">Clouds:</TextBlock>
+                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Label00"></TextBlock>
+                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Label39"></TextBlock>
                         <StackPanel Grid.Row="0" Grid.Column="1" Background="LightGray" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="2,2,2,2">
-                            <TextBlock Name="MinTemp0" Margin="5,0,0,0">15.5 C</TextBlock>
+                            <TextBlock Name="MinTemp0" Margin="5,0,0,0"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed0" Margin="5,0,0,0">15.6 M/S</TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud0" Margin="5,0,0,0">92%</TextBlock>
-                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc0">Clear Sky</TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed0" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud0" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc0"></TextBlock>
                         <TextBlock Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA0">933 HPA</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA0"></TextBlock>
                     </Grid>
                 </StackPanel>
                     <!-- 0 end -->
                 <StackPanel Background="Pink" Grid.Column="0" Grid.Row="1" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
                     <Border Height="30">
-                        <TextBlock Name="Date1" HorizontalAlignment="Center" VerticalAlignment="Center">Tue 21 Nov</TextBlock>
+                        <TextBlock Name="Date1" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
                     </Border>
                     <Border Height="29">
-                        <TextBlock Name="Time1" HorizontalAlignment="Center" VerticalAlignment="Top">12:00 PM</TextBlock>
+                        <TextBlock Name="Time1" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
                     </Border>
                 </StackPanel>
                 <StackPanel Background="PeachPuff" Grid.Column="1" Grid.Row="1" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
@@ -129,27 +125,27 @@
                             <ColumnDefinition Width="Auto"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <StackPanel Grid.Row="0" Grid.Column="0" Background="Orange" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="0,2,2,2">
-                            <TextBlock Name="MaxTemp1">13.4 C</TextBlock>
+                            <TextBlock Name="MaxTemp1"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center">Wind:</TextBlock>
-                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom">Clouds:</TextBlock>
+                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Label01"></TextBlock>
+                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Label40"></TextBlock>
                         <StackPanel Grid.Row="0" Grid.Column="1" Background="LightGray" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="2,2,2,2">
-                            <TextBlock Name="MinTemp1" Margin="5,0,0,0">15.5 C</TextBlock>
+                            <TextBlock Name="MinTemp1" Margin="5,0,0,0"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed1" Margin="5,0,0,0">15.6 M/S</TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud1" Margin="5,0,0,0">92%</TextBlock>
-                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc1">Clear Sky</TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed1" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud1" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc1"></TextBlock>
                         <TextBlock Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA1">933 HPA</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA1"></TextBlock>
                     </Grid>
                 </StackPanel>
                 <!-- 1 end-->
                 <StackPanel Background="Pink" Grid.Column="0" Grid.Row="2" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
                     <Border Height="30">
-                        <TextBlock Name="Date2" HorizontalAlignment="Center" VerticalAlignment="Center">Tue 21 Nov</TextBlock>
+                        <TextBlock Name="Date2" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
                     </Border>
                     <Border Height="29">
-                        <TextBlock Name="Time2" HorizontalAlignment="Center" VerticalAlignment="Top">12:00 PM</TextBlock>
+                        <TextBlock Name="Time2" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
                     </Border>
                 </StackPanel>
                 <StackPanel Background="PeachPuff" Grid.Column="1" Grid.Row="2" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
@@ -170,27 +166,27 @@
                             <ColumnDefinition Width="Auto"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <StackPanel Grid.Row="0" Grid.Column="0" Background="Orange" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="0,2,2,2">
-                            <TextBlock Name="MaxTemp2">13.4 C</TextBlock>
+                            <TextBlock Name="MaxTemp2"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center">Wind:</TextBlock>
-                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom">Clouds:</TextBlock>
+                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Label02"></TextBlock>
+                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Label41"></TextBlock>
                         <StackPanel Grid.Row="0" Grid.Column="1" Background="LightGray" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="2,2,2,2">
-                            <TextBlock Name="MinTemp2" Margin="5,0,0,0">15.5 C</TextBlock>
+                            <TextBlock Name="MinTemp2" Margin="5,0,0,0"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed2" Margin="5,0,0,0">15.6 M/S</TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud2" Margin="5,0,0,0">92%</TextBlock>
-                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc2">Clear Sky</TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed2" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud2" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc2"></TextBlock>
                         <TextBlock Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA2">933 HPA</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA2"></TextBlock>
                     </Grid>
                 </StackPanel>
                 <!-- 2 end -->
                 <StackPanel Background="Pink" Grid.Column="0" Grid.Row="3" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
                     <Border Height="30">
-                        <TextBlock Name="Date3" HorizontalAlignment="Center" VerticalAlignment="Center">Tue 21 Nov</TextBlock>
+                        <TextBlock Name="Date3" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
                     </Border>
                     <Border Height="29">
-                        <TextBlock Name="Time3" HorizontalAlignment="Center" VerticalAlignment="Top">12:00 PM</TextBlock>
+                        <TextBlock Name="Time3" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
                     </Border>
                 </StackPanel>
                 <StackPanel Background="PeachPuff" Grid.Column="1" Grid.Row="3" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
@@ -211,27 +207,27 @@
                             <ColumnDefinition Width="Auto"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <StackPanel Grid.Row="0" Grid.Column="0" Background="Orange" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="0,2,2,2">
-                            <TextBlock Name="MaxTemp3">13.4 C</TextBlock>
+                            <TextBlock Name="MaxTemp3"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center">Wind:</TextBlock>
-                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom">Clouds:</TextBlock>
+                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Label03"></TextBlock>
+                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Label42"></TextBlock>
                         <StackPanel Grid.Row="0" Grid.Column="1" Background="LightGray" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="2,2,2,2">
-                            <TextBlock Name="MinTemp3" Margin="5,0,0,0">15.5 C</TextBlock>
+                            <TextBlock Name="MinTemp3" Margin="5,0,0,0"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed3" Margin="5,0,0,0">15.6 M/S</TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud3" Margin="5,0,0,0">92%</TextBlock>
-                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc3">Clear Sky</TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed3" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud3" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc3"></TextBlock>
                         <TextBlock Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA3">933 HPA</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA3"></TextBlock>
                     </Grid>
                 </StackPanel>
                 <!-- 3 end-->
                 <StackPanel Background="Pink" Grid.Column="0" Grid.Row="4" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
                     <Border Height="30">
-                        <TextBlock Name="Date4" HorizontalAlignment="Center" VerticalAlignment="Center">Tue 21 Nov</TextBlock>
+                        <TextBlock Name="Date4" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
                     </Border>
                     <Border Height="29">
-                        <TextBlock Name="Time4" HorizontalAlignment="Center" VerticalAlignment="Top">12:00 PM</TextBlock>
+                        <TextBlock Name="Time4" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
                     </Border>
                 </StackPanel>
                 <StackPanel Background="PeachPuff" Grid.Column="1" Grid.Row="4" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
@@ -252,27 +248,27 @@
                             <ColumnDefinition Width="Auto"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <StackPanel Grid.Row="0" Grid.Column="0" Background="Orange" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="0,2,2,2">
-                            <TextBlock Name="MaxTemp4">13.4 C</TextBlock>
+                            <TextBlock Name="MaxTemp4"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center">Wind:</TextBlock>
-                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom">Clouds:</TextBlock>
+                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Label04"></TextBlock>
+                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Label43"></TextBlock>
                         <StackPanel Grid.Row="0" Grid.Column="1" Background="LightGray" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="2,2,2,2">
-                            <TextBlock Name="MinTemp4" Margin="5,0,0,0">15.5 C</TextBlock>
+                            <TextBlock Name="MinTemp4" Margin="5,0,0,0"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed4" Margin="5,0,0,0">15.6 M/S</TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud4" Margin="5,0,0,0">92%</TextBlock>
-                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc4">Clear Sky</TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed4" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud4" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc4"></TextBlock>
                         <TextBlock Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA4">933 HPA</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA4"></TextBlock>
                     </Grid>
                 </StackPanel>
                 <!-- 4 end -->
                 <StackPanel Background="Pink" Grid.Column="0" Grid.Row="5" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
                     <Border Height="30">
-                        <TextBlock Name="Date5" HorizontalAlignment="Center" VerticalAlignment="Center">Tue 21 Nov</TextBlock>
+                        <TextBlock Name="Date5" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
                     </Border>
                     <Border Height="29">
-                        <TextBlock Name="Time5" HorizontalAlignment="Center" VerticalAlignment="Top">12:00 PM</TextBlock>
+                        <TextBlock Name="Time5" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
                     </Border>
                 </StackPanel>
                 <StackPanel Background="PeachPuff" Grid.Column="1" Grid.Row="5" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
@@ -293,27 +289,27 @@
                             <ColumnDefinition Width="Auto"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <StackPanel Grid.Row="0" Grid.Column="0" Background="Orange" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="0,2,2,2">
-                            <TextBlock Name="MaxTemp5">13.4 C</TextBlock>
+                            <TextBlock Name="MaxTemp5"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center">Wind:</TextBlock>
-                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom">Clouds:</TextBlock>
+                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Label05"></TextBlock>
+                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Label44"></TextBlock>
                         <StackPanel Grid.Row="0" Grid.Column="1" Background="LightGray" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="2,2,2,2">
-                            <TextBlock Name="MinTemp5" Margin="5,0,0,0">15.5 C</TextBlock>
+                            <TextBlock Name="MinTemp5" Margin="5,0,0,0"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed5" Margin="5,0,0,0">15.6 M/S</TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud5" Margin="5,0,0,0">92%</TextBlock>
-                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc5">Clear Sky</TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed5" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud5" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc5"></TextBlock>
                         <TextBlock Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA5">933 HPA</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA5"></TextBlock>
                     </Grid>
                 </StackPanel>
                 <!-- 5 end -->
                 <StackPanel Background="Pink" Grid.Column="0" Grid.Row="6" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
                     <Border Height="30">
-                        <TextBlock Name="Date6" HorizontalAlignment="Center" VerticalAlignment="Center">Tue 21 Nov</TextBlock>
+                        <TextBlock Name="Date6" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
                     </Border>
                     <Border Height="29">
-                        <TextBlock Name="Time6" HorizontalAlignment="Center" VerticalAlignment="Top">12:00 PM</TextBlock>
+                        <TextBlock Name="Time6" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
                     </Border>
                 </StackPanel>
                 <StackPanel Background="PeachPuff" Grid.Column="1" Grid.Row="6" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
@@ -334,27 +330,27 @@
                             <ColumnDefinition Width="Auto"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <StackPanel Grid.Row="0" Grid.Column="0" Background="Orange" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="0,2,2,2">
-                            <TextBlock Name="MaxTemp6">13.4 C</TextBlock>
+                            <TextBlock Name="MaxTemp6"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center">Wind:</TextBlock>
-                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom">Clouds:</TextBlock>
+                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Label06"></TextBlock>
+                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Label45"></TextBlock>
                         <StackPanel Grid.Row="0" Grid.Column="1" Background="LightGray" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="2,2,2,2">
-                            <TextBlock Name="MinTemp6" Margin="5,0,0,0">15.5 C</TextBlock>
+                            <TextBlock Name="MinTemp6" Margin="5,0,0,0"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed6" Margin="5,0,0,0">15.6 M/S</TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud6" Margin="5,0,0,0">92%</TextBlock>
-                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc6">Clear Sky</TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed6" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud6" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc6"></TextBlock>
                         <TextBlock Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA6">933 HPA</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA6"></TextBlock>
                     </Grid>
                 </StackPanel>
                 <!-- 6 end -->
                 <StackPanel Background="Pink" Grid.Column="0" Grid.Row="7" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
                     <Border Height="30">
-                        <TextBlock Name="Date7" HorizontalAlignment="Center" VerticalAlignment="Center">Tue 21 Nov</TextBlock>
+                        <TextBlock Name="Date7" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
                     </Border>
                     <Border Height="29">
-                        <TextBlock Name="Time7" HorizontalAlignment="Center" VerticalAlignment="Top">12:00 PM</TextBlock>
+                        <TextBlock Name="Time7" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
                     </Border>
                 </StackPanel>
                 <StackPanel Background="PeachPuff" Grid.Column="1" Grid.Row="7" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
@@ -375,27 +371,27 @@
                             <ColumnDefinition Width="Auto"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <StackPanel Grid.Row="0" Grid.Column="0" Background="Orange" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="0,2,2,2">
-                            <TextBlock Name="MaxTemp7">13.4 C</TextBlock>
+                            <TextBlock Name="MaxTemp7"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center">Wind:</TextBlock>
-                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom">Clouds:</TextBlock>
+                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Label07"></TextBlock>
+                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Label46"></TextBlock>
                         <StackPanel Grid.Row="0" Grid.Column="1" Background="LightGray" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="2,2,2,2">
-                            <TextBlock Name="MinTemp7" Margin="5,0,0,0">15.5 C</TextBlock>
+                            <TextBlock Name="MinTemp7" Margin="5,0,0,0"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed7" Margin="5,0,0,0">15.6 M/S</TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud7" Margin="5,0,0,0">92%</TextBlock>
-                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc7">Clear Sky</TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed7" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud7" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc7"></TextBlock>
                         <TextBlock Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA7">933 HPA</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA7"></TextBlock>
                     </Grid>
                 </StackPanel>
                 <!-- 7 end -->
                 <StackPanel Background="Pink" Grid.Column="0" Grid.Row="8" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
                     <Border Height="30">
-                        <TextBlock Name="Date8" HorizontalAlignment="Center" VerticalAlignment="Center">Tue 21 Nov</TextBlock>
+                        <TextBlock Name="Date8" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
                     </Border>
                     <Border Height="29">
-                        <TextBlock Name="Time8" HorizontalAlignment="Center" VerticalAlignment="Top">12:00 PM</TextBlock>
+                        <TextBlock Name="Time8" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
                     </Border>
                 </StackPanel>
                 <StackPanel Background="PeachPuff" Grid.Column="1" Grid.Row="8" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
@@ -416,27 +412,27 @@
                             <ColumnDefinition Width="Auto"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <StackPanel Grid.Row="0" Grid.Column="0" Background="Orange" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="0,2,2,2">
-                            <TextBlock Name="MaxTemp8">13.4 C</TextBlock>
+                            <TextBlock Name="MaxTemp8"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center">Wind:</TextBlock>
-                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom">Clouds:</TextBlock>
+                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Label08"></TextBlock>
+                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Label47"></TextBlock>
                         <StackPanel Grid.Row="0" Grid.Column="1" Background="LightGray" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="2,2,2,2">
-                            <TextBlock Name="MinTemp8" Margin="5,0,0,0">15.5 C</TextBlock>
+                            <TextBlock Name="MinTemp8" Margin="5,0,0,0"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed8" Margin="5,0,0,0">15.6 M/S</TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud8" Margin="5,0,0,0">92%</TextBlock>
-                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc8">Clear Sky</TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed8" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud8" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc8"></TextBlock>
                         <TextBlock Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA8">933 HPA</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA8"></TextBlock>
                     </Grid>
                 </StackPanel>
                 <!-- 8 end -->
                 <StackPanel Background="Pink" Grid.Column="0" Grid.Row="9" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
                     <Border Height="30">
-                        <TextBlock Name="Date9" HorizontalAlignment="Center" VerticalAlignment="Center">Tue 21 Nov</TextBlock>
+                        <TextBlock Name="Date9" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
                     </Border>
                     <Border Height="29">
-                        <TextBlock Name="Time9" HorizontalAlignment="Center" VerticalAlignment="Top">12:00 PM</TextBlock>
+                        <TextBlock Name="Time9" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
                     </Border>
                 </StackPanel>
                 <StackPanel Background="PeachPuff" Grid.Column="1" Grid.Row="9" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
@@ -457,27 +453,27 @@
                             <ColumnDefinition Width="Auto"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <StackPanel Grid.Row="0" Grid.Column="0" Background="Orange" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="0,2,2,2">
-                            <TextBlock Name="MaxTemp9">13.4 C</TextBlock>
+                            <TextBlock Name="MaxTemp9"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center">Wind:</TextBlock>
-                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom">Clouds:</TextBlock>
+                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Label09"></TextBlock>
+                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Label48"></TextBlock>
                         <StackPanel Grid.Row="0" Grid.Column="1" Background="LightGray" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="2,2,2,2">
-                            <TextBlock Name="MinTemp9" Margin="5,0,0,0">15.5 C</TextBlock>
+                            <TextBlock Name="MinTemp9" Margin="5,0,0,0"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed9" Margin="5,0,0,0">15.6 M/S</TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud9" Margin="5,0,0,0">92%</TextBlock>
-                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc9">Clear Sky</TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed9" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud9" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc9"></TextBlock>
                         <TextBlock Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA9">933 HPA</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA9"></TextBlock>
                     </Grid>
                 </StackPanel>
                 <!-- 9 end -->
                 <StackPanel Background="Pink" Grid.Column="0" Grid.Row="10" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
                     <Border Height="30">
-                        <TextBlock Name="Date10" HorizontalAlignment="Center" VerticalAlignment="Center">Tue 21 Nov</TextBlock>
+                        <TextBlock Name="Date10" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
                     </Border>
                     <Border Height="29">
-                        <TextBlock Name="Time10" HorizontalAlignment="Center" VerticalAlignment="Top">12:00 PM</TextBlock>
+                        <TextBlock Name="Time10" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
                     </Border>
                 </StackPanel>
                 <StackPanel Background="PeachPuff" Grid.Column="1" Grid.Row="10" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
@@ -498,27 +494,27 @@
                             <ColumnDefinition Width="Auto"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <StackPanel Grid.Row="0" Grid.Column="0" Background="Orange" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="0,2,2,2">
-                            <TextBlock Name="MaxTemp10">13.4 C</TextBlock>
+                            <TextBlock Name="MaxTemp10"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center">Wind:</TextBlock>
-                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom">Clouds:</TextBlock>
+                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Label10"></TextBlock>
+                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Label49"></TextBlock>
                         <StackPanel Grid.Row="0" Grid.Column="1" Background="LightGray" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="2,2,2,2">
-                            <TextBlock Name="MinTemp10" Margin="5,0,0,0">15.5 C</TextBlock>
+                            <TextBlock Name="MinTemp10" Margin="5,0,0,0"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed10" Margin="5,0,0,0">15.6 M/S</TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud10" Margin="5,0,0,0">92%</TextBlock>
-                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc10">Clear Sky</TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed10" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud10" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc10"></TextBlock>
                         <TextBlock Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA10">933 HPA</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA10"></TextBlock>
                     </Grid>
                 </StackPanel>
                 <!-- 10 end -->
                 <StackPanel Background="Pink" Grid.Column="0" Grid.Row="11" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
                     <Border Height="30">
-                        <TextBlock Name="Date11" HorizontalAlignment="Center" VerticalAlignment="Center">Tue 21 Nov</TextBlock>
+                        <TextBlock Name="Date11" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
                     </Border>
                     <Border Height="29">
-                        <TextBlock Name="Time11" HorizontalAlignment="Center" VerticalAlignment="Top">12:00 PM</TextBlock>
+                        <TextBlock Name="Time11" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
                     </Border>
                 </StackPanel>
                 <StackPanel Background="PeachPuff" Grid.Column="1" Grid.Row="11" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
@@ -539,27 +535,27 @@
                             <ColumnDefinition Width="Auto"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <StackPanel Grid.Row="0" Grid.Column="0" Background="Orange" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="0,2,2,2">
-                            <TextBlock Name="MaxTemp11">13.4 C</TextBlock>
+                            <TextBlock Name="MaxTemp11"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center">Wind:</TextBlock>
-                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom">Clouds:</TextBlock>
+                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Label11"></TextBlock>
+                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Label50"></TextBlock>
                         <StackPanel Grid.Row="0" Grid.Column="1" Background="LightGray" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="2,2,2,2">
-                            <TextBlock Name="MinTemp11" Margin="5,0,0,0">15.5 C</TextBlock>
+                            <TextBlock Name="MinTemp11" Margin="5,0,0,0"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed11" Margin="5,0,0,0">15.6 M/S</TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud11" Margin="5,0,0,0">92%</TextBlock>
-                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc11">Clear Sky</TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed11" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud11" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc11"></TextBlock>
                         <TextBlock Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA11">933 HPA</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA11"></TextBlock>
                     </Grid>
                 </StackPanel>
                 <!-- 11 end -->
                 <StackPanel Background="Pink" Grid.Column="0" Grid.Row="12" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
                     <Border Height="30">
-                        <TextBlock Name="Date12" HorizontalAlignment="Center" VerticalAlignment="Center">Tue 21 Nov</TextBlock>
+                        <TextBlock Name="Date12" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
                     </Border>
                     <Border Height="29">
-                        <TextBlock Name="Time12" HorizontalAlignment="Center" VerticalAlignment="Top">12:00 PM</TextBlock>
+                        <TextBlock Name="Time12" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
                     </Border>
                 </StackPanel>
                 <StackPanel Background="PeachPuff" Grid.Column="1" Grid.Row="12" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
@@ -580,27 +576,27 @@
                             <ColumnDefinition Width="Auto"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <StackPanel Grid.Row="0" Grid.Column="0" Background="Orange" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="0,2,2,2">
-                            <TextBlock Name="MaxTemp12">13.4 C</TextBlock>
+                            <TextBlock Name="MaxTemp12"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center">Wind:</TextBlock>
-                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom">Clouds:</TextBlock>
+                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Label12"></TextBlock>
+                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Label51"></TextBlock>
                         <StackPanel Grid.Row="0" Grid.Column="1" Background="LightGray" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="2,2,2,2">
-                            <TextBlock Name="MinTemp12" Margin="5,0,0,0">15.5 C</TextBlock>
+                            <TextBlock Name="MinTemp12" Margin="5,0,0,0"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed12" Margin="5,0,0,0">15.6 M/S</TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud12" Margin="5,0,0,0">92%</TextBlock>
-                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc12">Clear Sky</TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed12" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud12" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc12"></TextBlock>
                         <TextBlock Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA12">933 HPA</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA12"></TextBlock>
                     </Grid>
                 </StackPanel>
                 <!-- 12 end -->
                 <StackPanel Background="Pink" Grid.Column="0" Grid.Row="13" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
                     <Border Height="30">
-                        <TextBlock Name="Date13" HorizontalAlignment="Center" VerticalAlignment="Center">Tue 21 Nov</TextBlock>
+                        <TextBlock Name="Date13" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
                     </Border>
                     <Border Height="29">
-                        <TextBlock Name="Time13" HorizontalAlignment="Center" VerticalAlignment="Top">12:00 PM</TextBlock>
+                        <TextBlock Name="Time13" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
                     </Border>
                 </StackPanel>
                 <StackPanel Background="PeachPuff" Grid.Column="1" Grid.Row="13" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
@@ -621,27 +617,27 @@
                             <ColumnDefinition Width="Auto"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <StackPanel Grid.Row="0" Grid.Column="0" Background="Orange" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="0,2,2,2">
-                            <TextBlock Name="MaxTemp13">13.4 C</TextBlock>
+                            <TextBlock Name="MaxTemp13"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center">Wind:</TextBlock>
-                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom">Clouds:</TextBlock>
+                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Label13"></TextBlock>
+                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Label52"></TextBlock>
                         <StackPanel Grid.Row="0" Grid.Column="1" Background="LightGray" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="2,2,2,2">
-                            <TextBlock Name="MinTemp13" Margin="5,0,0,0">15.5 C</TextBlock>
+                            <TextBlock Name="MinTemp13" Margin="5,0,0,0"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed13" Margin="5,0,0,0">15.6 M/S</TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud13" Margin="5,0,0,0">92%</TextBlock>
-                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc13">Clear Sky</TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed13" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud13" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc13"></TextBlock>
                         <TextBlock Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA13">933 HPA</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA13"></TextBlock>
                     </Grid>
                 </StackPanel>
                 <!-- 13 end -->
                 <StackPanel Background="Pink" Grid.Column="0" Grid.Row="14" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
                     <Border Height="30">
-                        <TextBlock Name="Date14" HorizontalAlignment="Center" VerticalAlignment="Center">Tue 21 Nov</TextBlock>
+                        <TextBlock Name="Date14" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
                     </Border>
                     <Border Height="29">
-                        <TextBlock Name="Time14" HorizontalAlignment="Center" VerticalAlignment="Top">12:00 PM</TextBlock>
+                        <TextBlock Name="Time14" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
                     </Border>
                 </StackPanel>
                 <StackPanel Background="PeachPuff" Grid.Column="1" Grid.Row="14" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
@@ -662,27 +658,27 @@
                             <ColumnDefinition Width="Auto"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <StackPanel Grid.Row="0" Grid.Column="0" Background="Orange" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="0,2,2,2">
-                            <TextBlock Name="MaxTemp14">13.4 C</TextBlock>
+                            <TextBlock Name="MaxTemp14"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center">Wind:</TextBlock>
-                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom">Clouds:</TextBlock>
+                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Label14"></TextBlock>
+                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Label53"></TextBlock>
                         <StackPanel Grid.Row="0" Grid.Column="1" Background="LightGray" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="2,2,2,2">
-                            <TextBlock Name="MinTemp14" Margin="5,0,0,0">15.5 C</TextBlock>
+                            <TextBlock Name="MinTemp14" Margin="5,0,0,0"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed14" Margin="5,0,0,0">15.6 M/S</TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud14" Margin="5,0,0,0">92%</TextBlock>
-                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc14">Clear Sky</TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed14" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud14" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc14"></TextBlock>
                         <TextBlock Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA14">933 HPA</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA14"></TextBlock>
                     </Grid>
                 </StackPanel>
                 <!-- 14 end -->
                 <StackPanel Background="Pink" Grid.Column="0" Grid.Row="15" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
                     <Border Height="30">
-                        <TextBlock Name="Date15" HorizontalAlignment="Center" VerticalAlignment="Center">Tue 21 Nov</TextBlock>
+                        <TextBlock Name="Date15" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
                     </Border>
                     <Border Height="29">
-                        <TextBlock Name="Time15" HorizontalAlignment="Center" VerticalAlignment="Top">12:00 PM</TextBlock>
+                        <TextBlock Name="Time15" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
                     </Border>
                 </StackPanel>
                 <StackPanel Background="PeachPuff" Grid.Column="1" Grid.Row="15" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
@@ -703,27 +699,27 @@
                             <ColumnDefinition Width="Auto"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <StackPanel Grid.Row="0" Grid.Column="0" Background="Orange" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="0,2,2,2">
-                            <TextBlock Name="MaxTemp15">13.4 C</TextBlock>
+                            <TextBlock Name="MaxTemp15"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center">Wind:</TextBlock>
-                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom">Clouds:</TextBlock>
+                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Label15"></TextBlock>
+                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Label54"></TextBlock>
                         <StackPanel Grid.Row="0" Grid.Column="1" Background="LightGray" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="2,2,2,2">
-                            <TextBlock Name="MinTemp15" Margin="5,0,0,0">15.5 C</TextBlock>
+                            <TextBlock Name="MinTemp15" Margin="5,0,0,0"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed15" Margin="5,0,0,0">15.6 M/S</TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud15" Margin="5,0,0,0">92%</TextBlock>
-                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc15">Clear Sky</TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed15" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud15" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc15"></TextBlock>
                         <TextBlock Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA15">933 HPA</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA15"></TextBlock>
                     </Grid>
                 </StackPanel>
                 <!-- 15 end -->
                 <StackPanel Background="Pink" Grid.Column="0" Grid.Row="16" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
                     <Border Height="30">
-                        <TextBlock Name="Date16" HorizontalAlignment="Center" VerticalAlignment="Center">Tue 21 Nov</TextBlock>
+                        <TextBlock Name="Date16" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
                     </Border>
                     <Border Height="29">
-                        <TextBlock Name="Time16" HorizontalAlignment="Center" VerticalAlignment="Top">12:00 PM</TextBlock>
+                        <TextBlock Name="Time16" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
                     </Border>
                 </StackPanel>
                 <StackPanel Background="PeachPuff" Grid.Column="1" Grid.Row="16" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
@@ -744,27 +740,27 @@
                             <ColumnDefinition Width="Auto"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <StackPanel Grid.Row="0" Grid.Column="0" Background="Orange" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="0,2,2,2">
-                            <TextBlock Name="MaxTemp16">13.4 C</TextBlock>
+                            <TextBlock Name="MaxTemp16"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center">Wind:</TextBlock>
-                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom">Clouds:</TextBlock>
+                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Label16"></TextBlock>
+                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Label55"></TextBlock>
                         <StackPanel Grid.Row="0" Grid.Column="1" Background="LightGray" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="2,2,2,2">
-                            <TextBlock Name="MinTemp16" Margin="5,0,0,0">15.5 C</TextBlock>
+                            <TextBlock Name="MinTemp16" Margin="5,0,0,0"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed16" Margin="5,0,0,0">15.6 M/S</TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud16" Margin="5,0,0,0">92%</TextBlock>
-                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc16">Clear Sky</TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed16" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud16" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc16"></TextBlock>
                         <TextBlock Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA16">933 HPA</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA16"></TextBlock>
                     </Grid>
                 </StackPanel>
                 <!-- 16 end -->
                 <StackPanel Background="Pink" Grid.Column="0" Grid.Row="17" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
                     <Border Height="30">
-                        <TextBlock Name="Date17" HorizontalAlignment="Center" VerticalAlignment="Center">Tue 21 Nov</TextBlock>
+                        <TextBlock Name="Date17" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
                     </Border>
                     <Border Height="29">
-                        <TextBlock Name="Time17" HorizontalAlignment="Center" VerticalAlignment="Top">12:00 PM</TextBlock>
+                        <TextBlock Name="Time17" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
                     </Border>
                 </StackPanel>
                 <StackPanel Background="PeachPuff" Grid.Column="1" Grid.Row="17" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
@@ -785,27 +781,27 @@
                             <ColumnDefinition Width="Auto"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <StackPanel Grid.Row="0" Grid.Column="0" Background="Orange" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="0,2,2,2">
-                            <TextBlock Name="MaxTemp17">13.4 C</TextBlock>
+                            <TextBlock Name="MaxTemp17"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center">Wind:</TextBlock>
-                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom">Clouds:</TextBlock>
+                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Label17"></TextBlock>
+                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Label56"></TextBlock>
                         <StackPanel Grid.Row="0" Grid.Column="1" Background="LightGray" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="2,2,2,2">
-                            <TextBlock Name="MinTemp17" Margin="5,0,0,0">15.5 C</TextBlock>
+                            <TextBlock Name="MinTemp17" Margin="5,0,0,0"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed17" Margin="5,0,0,0">15.6 M/S</TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud17" Margin="5,0,0,0">92%</TextBlock>
-                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc17">Clear Sky</TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed17" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud17" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc17"></TextBlock>
                         <TextBlock Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA17">933 HPA</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA17"></TextBlock>
                     </Grid>
                 </StackPanel>
                 <!-- 17 end -->
                 <StackPanel Background="Pink" Grid.Column="0" Grid.Row="18" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
                     <Border Height="30">
-                        <TextBlock Name="Date18" HorizontalAlignment="Center" VerticalAlignment="Center">Tue 21 Nov</TextBlock>
+                        <TextBlock Name="Date18" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
                     </Border>
                     <Border Height="29">
-                        <TextBlock Name="Time18" HorizontalAlignment="Center" VerticalAlignment="Top">12:00 PM</TextBlock>
+                        <TextBlock Name="Time18" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
                     </Border>
                 </StackPanel>
                 <StackPanel Background="PeachPuff" Grid.Column="1" Grid.Row="18" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
@@ -826,27 +822,27 @@
                             <ColumnDefinition Width="Auto"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <StackPanel Grid.Row="0" Grid.Column="0" Background="Orange" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="0,2,2,2">
-                            <TextBlock Name="MaxTemp18">13.4 C</TextBlock>
+                            <TextBlock Name="MaxTemp18"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center">Wind:</TextBlock>
-                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom">Clouds:</TextBlock>
+                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Label18"></TextBlock>
+                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Label57"></TextBlock>
                         <StackPanel Grid.Row="0" Grid.Column="1" Background="LightGray" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="2,2,2,2">
-                            <TextBlock Name="MinTemp18" Margin="5,0,0,0">15.5 C</TextBlock>
+                            <TextBlock Name="MinTemp18" Margin="5,0,0,0"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed18" Margin="5,0,0,0">15.6 M/S</TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud18" Margin="5,0,0,0">92%</TextBlock>
-                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc18">Clear Sky</TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed18" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud18" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc18"></TextBlock>
                         <TextBlock Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA18">933 HPA</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA18"></TextBlock>
                     </Grid>
                 </StackPanel>
                 <!-- 18 end -->
                 <StackPanel Background="Pink" Grid.Column="0" Grid.Row="19" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
                     <Border Height="30">
-                        <TextBlock Name="Date19" HorizontalAlignment="Center" VerticalAlignment="Center">Tue 21 Nov</TextBlock>
+                        <TextBlock Name="Date19" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
                     </Border>
                     <Border Height="29">
-                        <TextBlock Name="Time19" HorizontalAlignment="Center" VerticalAlignment="Top">12:00 PM</TextBlock>
+                        <TextBlock Name="Time19" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
                     </Border>
                 </StackPanel>
                 <StackPanel Background="PeachPuff" Grid.Column="1" Grid.Row="19" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
@@ -867,27 +863,27 @@
                             <ColumnDefinition Width="Auto"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <StackPanel Grid.Row="0" Grid.Column="0" Background="Orange" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="0,2,2,2">
-                            <TextBlock Name="MaxTemp19">13.4 C</TextBlock>
+                            <TextBlock Name="MaxTemp19"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center">Wind:</TextBlock>
-                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom">Clouds:</TextBlock>
+                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Label19"></TextBlock>
+                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Label58"></TextBlock>
                         <StackPanel Grid.Row="0" Grid.Column="1" Background="LightGray" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="2,2,2,2">
-                            <TextBlock Name="MinTemp19" Margin="5,0,0,0">15.5 C</TextBlock>
+                            <TextBlock Name="MinTemp19" Margin="5,0,0,0"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed19" Margin="5,0,0,0">15.6 M/S</TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud19" Margin="5,0,0,0">92%</TextBlock>
-                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc19">Clear Sky</TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed19" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud19" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc19"></TextBlock>
                         <TextBlock Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA19">933 HPA</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA19"></TextBlock>
                     </Grid>
                 </StackPanel>
                 <!-- 19 end -->
                 <StackPanel Background="Pink" Grid.Column="0" Grid.Row="20" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
                     <Border Height="30">
-                        <TextBlock Name="Date20" HorizontalAlignment="Center" VerticalAlignment="Center">Tue 21 Nov</TextBlock>
+                        <TextBlock Name="Date20" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
                     </Border>
                     <Border Height="29">
-                        <TextBlock Name="Time20" HorizontalAlignment="Center" VerticalAlignment="Top">12:00 PM</TextBlock>
+                        <TextBlock Name="Time20" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
                     </Border>
                 </StackPanel>
                 <StackPanel Background="PeachPuff" Grid.Column="1" Grid.Row="20" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
@@ -908,27 +904,27 @@
                             <ColumnDefinition Width="Auto"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <StackPanel Grid.Row="0" Grid.Column="0" Background="Orange" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="0,2,2,2">
-                            <TextBlock Name="MaxTemp20">13.4 C</TextBlock>
+                            <TextBlock Name="MaxTemp20"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center">Wind:</TextBlock>
-                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom">Clouds:</TextBlock>
+                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Label20"></TextBlock>
+                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Label59"></TextBlock>
                         <StackPanel Grid.Row="0" Grid.Column="1" Background="LightGray" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="2,2,2,2">
-                            <TextBlock Name="MinTemp20" Margin="5,0,0,0">15.5 C</TextBlock>
+                            <TextBlock Name="MinTemp20" Margin="5,0,0,0"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed20" Margin="5,0,0,0">15.6 M/S</TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud20" Margin="5,0,0,0">92%</TextBlock>
-                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc20">Clear Sky</TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed20" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud20" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc20"></TextBlock>
                         <TextBlock Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA20">933 HPA</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA20"></TextBlock>
                     </Grid>
                 </StackPanel>
                 <!-- 20 end -->
                 <StackPanel Background="Pink" Grid.Column="0" Grid.Row="21" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
                     <Border Height="30">
-                        <TextBlock Name="Date21" HorizontalAlignment="Center" VerticalAlignment="Center">Tue 21 Nov</TextBlock>
+                        <TextBlock Name="Date21" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
                     </Border>
                     <Border Height="29">
-                        <TextBlock Name="Time21" HorizontalAlignment="Center" VerticalAlignment="Top">12:00 PM</TextBlock>
+                        <TextBlock Name="Time21" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
                     </Border>
                 </StackPanel>
                 <StackPanel Background="PeachPuff" Grid.Column="1" Grid.Row="21" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
@@ -949,27 +945,27 @@
                             <ColumnDefinition Width="Auto"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <StackPanel Grid.Row="0" Grid.Column="0" Background="Orange" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="0,2,2,2">
-                            <TextBlock Name="MaxTemp21">13.4 C</TextBlock>
+                            <TextBlock Name="MaxTemp21"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center">Wind:</TextBlock>
-                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom">Clouds:</TextBlock>
+                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Label21"></TextBlock>
+                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Label60"></TextBlock>
                         <StackPanel Grid.Row="0" Grid.Column="1" Background="LightGray" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="2,2,2,2">
-                            <TextBlock Name="MinTemp21" Margin="5,0,0,0">15.5 C</TextBlock>
+                            <TextBlock Name="MinTemp21" Margin="5,0,0,0"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed21" Margin="5,0,0,0">15.6 M/S</TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud21" Margin="5,0,0,0">92%</TextBlock>
-                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc21">Clear Sky</TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed21" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud21" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc21"></TextBlock>
                         <TextBlock Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA21">933 HPA</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA21"></TextBlock>
                     </Grid>
                 </StackPanel>
                 <!-- 21 end -->
                 <StackPanel Background="Pink" Grid.Column="0" Grid.Row="22" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
                     <Border Height="30">
-                        <TextBlock Name="Date22" HorizontalAlignment="Center" VerticalAlignment="Center">Tue 21 Nov</TextBlock>
+                        <TextBlock Name="Date22" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
                     </Border>
                     <Border Height="29">
-                        <TextBlock Name="Time22" HorizontalAlignment="Center" VerticalAlignment="Top">12:00 PM</TextBlock>
+                        <TextBlock Name="Time22" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
                     </Border>
                 </StackPanel>
                 <StackPanel Background="PeachPuff" Grid.Column="1" Grid.Row="22" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
@@ -990,27 +986,27 @@
                             <ColumnDefinition Width="Auto"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <StackPanel Grid.Row="0" Grid.Column="0" Background="Orange" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="0,2,2,2">
-                            <TextBlock Name="MaxTemp22">13.4 C</TextBlock>
+                            <TextBlock Name="MaxTemp22"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center">Wind:</TextBlock>
-                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom">Clouds:</TextBlock>
+                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Label22"></TextBlock>
+                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Label61"></TextBlock>
                         <StackPanel Grid.Row="0" Grid.Column="1" Background="LightGray" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="2,2,2,2">
-                            <TextBlock Name="MinTemp22" Margin="5,0,0,0">15.5 C</TextBlock>
+                            <TextBlock Name="MinTemp22" Margin="5,0,0,0"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed22" Margin="5,0,0,0">15.6 M/S</TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud22" Margin="5,0,0,0">92%</TextBlock>
-                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc22">Clear Sky</TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed22" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud22" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc22"></TextBlock>
                         <TextBlock Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA22">933 HPA</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA22"></TextBlock>
                     </Grid>
                 </StackPanel>
                 <!-- 22 end -->
                 <StackPanel Background="Pink" Grid.Column="0" Grid.Row="23" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
                     <Border Height="30">
-                        <TextBlock Name="Date23" HorizontalAlignment="Center" VerticalAlignment="Center">Tue 21 Nov</TextBlock>
+                        <TextBlock Name="Date23" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
                     </Border>
                     <Border Height="29">
-                        <TextBlock Name="Time23" HorizontalAlignment="Center" VerticalAlignment="Top">12:00 PM</TextBlock>
+                        <TextBlock Name="Time23" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
                     </Border>
                 </StackPanel>
                 <StackPanel Background="PeachPuff" Grid.Column="1" Grid.Row="23" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
@@ -1031,27 +1027,27 @@
                             <ColumnDefinition Width="Auto"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <StackPanel Grid.Row="0" Grid.Column="0" Background="Orange" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="0,2,2,2">
-                            <TextBlock Name="MaxTemp23">13.4 C</TextBlock>
+                            <TextBlock Name="MaxTemp23"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center">Wind:</TextBlock>
-                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom">Clouds:</TextBlock>
+                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Label23"></TextBlock>
+                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Label62"></TextBlock>
                         <StackPanel Grid.Row="0" Grid.Column="1" Background="LightGray" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="2,2,2,2">
-                            <TextBlock Name="MinTemp23" Margin="5,0,0,0">15.5 C</TextBlock>
+                            <TextBlock Name="MinTemp23" Margin="5,0,0,0"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed23" Margin="5,0,0,0">15.6 M/S</TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud23" Margin="5,0,0,0">92%</TextBlock>
-                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc23">Clear Sky</TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed23" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud23" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc23"></TextBlock>
                         <TextBlock Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA23">933 HPA</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA23"></TextBlock>
                     </Grid>
                 </StackPanel>
                 <!-- 23 end -->
                 <StackPanel Background="Pink" Grid.Column="0" Grid.Row="24" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
                     <Border Height="30">
-                        <TextBlock Name="Date24" HorizontalAlignment="Center" VerticalAlignment="Center">Tue 21 Nov</TextBlock>
+                        <TextBlock Name="Date24" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
                     </Border>
                     <Border Height="29">
-                        <TextBlock Name="Time24" HorizontalAlignment="Center" VerticalAlignment="Top">12:00 PM</TextBlock>
+                        <TextBlock Name="Time24" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
                     </Border>
                 </StackPanel>
                 <StackPanel Background="PeachPuff" Grid.Column="1" Grid.Row="24" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
@@ -1072,27 +1068,27 @@
                             <ColumnDefinition Width="Auto"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <StackPanel Grid.Row="0" Grid.Column="0" Background="Orange" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="0,2,2,2">
-                            <TextBlock Name="MaxTemp24">13.4 C</TextBlock>
+                            <TextBlock Name="MaxTemp24"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center">Wind:</TextBlock>
-                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom">Clouds:</TextBlock>
+                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Label24"></TextBlock>
+                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Label63"></TextBlock>
                         <StackPanel Grid.Row="0" Grid.Column="1" Background="LightGray" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="2,2,2,2">
-                            <TextBlock Name="MinTemp24" Margin="5,0,0,0">15.5 C</TextBlock>
+                            <TextBlock Name="MinTemp24" Margin="5,0,0,0"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed24" Margin="5,0,0,0">15.6 M/S</TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud24" Margin="5,0,0,0">92%</TextBlock>
-                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc24">Clear Sky</TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed24" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud24" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc24"></TextBlock>
                         <TextBlock Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA24">933 HPA</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA24"></TextBlock>
                     </Grid>
                 </StackPanel>
                 <!-- 24 end -->
                 <StackPanel Background="Pink" Grid.Column="0" Grid.Row="25" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
                     <Border Height="30">
-                        <TextBlock Name="Date25" HorizontalAlignment="Center" VerticalAlignment="Center">Tue 21 Nov</TextBlock>
+                        <TextBlock Name="Date25" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
                     </Border>
                     <Border Height="29">
-                        <TextBlock Name="Time25" HorizontalAlignment="Center" VerticalAlignment="Top">12:00 PM</TextBlock>
+                        <TextBlock Name="Time25" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
                     </Border>
                 </StackPanel>
                 <StackPanel Background="PeachPuff" Grid.Column="1" Grid.Row="25" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
@@ -1113,27 +1109,27 @@
                             <ColumnDefinition Width="Auto"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <StackPanel Grid.Row="0" Grid.Column="0" Background="Orange" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="0,2,2,2">
-                            <TextBlock Name="MaxTemp25">13.4 C</TextBlock>
+                            <TextBlock Name="MaxTemp25"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center">Wind:</TextBlock>
-                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom">Clouds:</TextBlock>
+                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Label25"></TextBlock>
+                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Label64"></TextBlock>
                         <StackPanel Grid.Row="0" Grid.Column="1" Background="LightGray" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="2,2,2,2">
-                            <TextBlock Name="MinTemp25" Margin="5,0,0,0">15.5 C</TextBlock>
+                            <TextBlock Name="MinTemp25" Margin="5,0,0,0"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed25" Margin="5,0,0,0">15.6 M/S</TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud25" Margin="5,0,0,0">92%</TextBlock>
-                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc25">Clear Sky</TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed25" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud25" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc25"></TextBlock>
                         <TextBlock Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA25">933 HPA</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA25"></TextBlock>
                     </Grid>
                 </StackPanel>
                 <!-- 25 end -->
                 <StackPanel Background="Pink" Grid.Column="0" Grid.Row="26" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
                     <Border Height="30">
-                        <TextBlock Name="Date26" HorizontalAlignment="Center" VerticalAlignment="Center">Tue 21 Nov</TextBlock>
+                        <TextBlock Name="Date26" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
                     </Border>
                     <Border Height="29">
-                        <TextBlock Name="Time26" HorizontalAlignment="Center" VerticalAlignment="Top">12:00 PM</TextBlock>
+                        <TextBlock Name="Time26" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
                     </Border>
                 </StackPanel>
                 <StackPanel Background="PeachPuff" Grid.Column="1" Grid.Row="26" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
@@ -1154,27 +1150,27 @@
                             <ColumnDefinition Width="Auto"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <StackPanel Grid.Row="0" Grid.Column="0" Background="Orange" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="0,2,2,2">
-                            <TextBlock Name="MaxTemp26">13.4 C</TextBlock>
+                            <TextBlock Name="MaxTemp26"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center">Wind:</TextBlock>
-                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom">Clouds:</TextBlock>
+                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Label26"></TextBlock>
+                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Label65"></TextBlock>
                         <StackPanel Grid.Row="0" Grid.Column="1" Background="LightGray" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="2,2,2,2">
-                            <TextBlock Name="MinTemp26" Margin="5,0,0,0">15.5 C</TextBlock>
+                            <TextBlock Name="MinTemp26" Margin="5,0,0,0"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed26" Margin="5,0,0,0">15.6 M/S</TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud26" Margin="5,0,0,0">92%</TextBlock>
-                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc26">Clear Sky</TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed26" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud26" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc26"></TextBlock>
                         <TextBlock Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA26">933 HPA</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA26"></TextBlock>
                     </Grid>
                 </StackPanel>
                 <!-- 26 end -->
                 <StackPanel Background="Pink" Grid.Column="0" Grid.Row="27" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
                     <Border Height="30">
-                        <TextBlock Name="Date27" HorizontalAlignment="Center" VerticalAlignment="Center">Tue 21 Nov</TextBlock>
+                        <TextBlock Name="Date27" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
                     </Border>
                     <Border Height="29">
-                        <TextBlock Name="Time27" HorizontalAlignment="Center" VerticalAlignment="Top">12:00 PM</TextBlock>
+                        <TextBlock Name="Time27" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
                     </Border>
                 </StackPanel>
                 <StackPanel Background="PeachPuff" Grid.Column="1" Grid.Row="27" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
@@ -1195,27 +1191,27 @@
                             <ColumnDefinition Width="Auto"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <StackPanel Grid.Row="0" Grid.Column="0" Background="Orange" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="0,2,2,2">
-                            <TextBlock Name="MaxTemp27">13.4 C</TextBlock>
+                            <TextBlock Name="MaxTemp27"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center">Wind:</TextBlock>
-                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom">Clouds:</TextBlock>
+                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Label27"></TextBlock>
+                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Label66"></TextBlock>
                         <StackPanel Grid.Row="0" Grid.Column="1" Background="LightGray" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="2,2,2,2">
-                            <TextBlock Name="MinTemp27" Margin="5,0,0,0">15.5 C</TextBlock>
+                            <TextBlock Name="MinTemp27" Margin="5,0,0,0"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed27" Margin="5,0,0,0">15.6 M/S</TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud27" Margin="5,0,0,0">92%</TextBlock>
-                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc27">Clear Sky</TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed27" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud27" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc27"></TextBlock>
                         <TextBlock Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA27">933 HPA</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA27"></TextBlock>
                     </Grid>
                 </StackPanel>
                 <!-- 27 end -->
                 <StackPanel Background="Pink" Grid.Column="0" Grid.Row="28" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
                     <Border Height="30">
-                        <TextBlock Name="Date28" HorizontalAlignment="Center" VerticalAlignment="Center">Tue 21 Nov</TextBlock>
+                        <TextBlock Name="Date28" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
                     </Border>
                     <Border Height="29">
-                        <TextBlock Name="Time28" HorizontalAlignment="Center" VerticalAlignment="Top">12:00 PM</TextBlock>
+                        <TextBlock Name="Time28" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
                     </Border>
                 </StackPanel>
                 <StackPanel Background="PeachPuff" Grid.Column="1" Grid.Row="28" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
@@ -1236,27 +1232,27 @@
                             <ColumnDefinition Width="Auto"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <StackPanel Grid.Row="0" Grid.Column="0" Background="Orange" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="0,2,2,2">
-                            <TextBlock Name="MaxTemp28">13.4 C</TextBlock>
+                            <TextBlock Name="MaxTemp28"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center">Wind:</TextBlock>
-                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom">Clouds:</TextBlock>
+                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Label28"></TextBlock>
+                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Label67"></TextBlock>
                         <StackPanel Grid.Row="0" Grid.Column="1" Background="LightGray" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="2,2,2,2">
-                            <TextBlock Name="MinTemp28" Margin="5,0,0,0">15.5 C</TextBlock>
+                            <TextBlock Name="MinTemp28" Margin="5,0,0,0"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed28" Margin="5,0,0,0">15.6 M/S</TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud28" Margin="5,0,0,0">92%</TextBlock>
-                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc28">Clear Sky</TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed28" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud28" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc28"></TextBlock>
                         <TextBlock Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA28">933 HPA</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA28"></TextBlock>
                     </Grid>
                 </StackPanel>
                 <!-- 28 end -->
                 <StackPanel Background="Pink" Grid.Column="0" Grid.Row="29" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
                     <Border Height="30">
-                        <TextBlock Name="Date29" HorizontalAlignment="Center" VerticalAlignment="Center">Tue 21 Nov</TextBlock>
+                        <TextBlock Name="Date29" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
                     </Border>
                     <Border Height="29">
-                        <TextBlock Name="Time29" HorizontalAlignment="Center" VerticalAlignment="Top">12:00 PM</TextBlock>
+                        <TextBlock Name="Time29" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
                     </Border>
                 </StackPanel>
                 <StackPanel Background="PeachPuff" Grid.Column="1" Grid.Row="29" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
@@ -1277,27 +1273,27 @@
                             <ColumnDefinition Width="Auto"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <StackPanel Grid.Row="0" Grid.Column="0" Background="Orange" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="0,2,2,2">
-                            <TextBlock Name="MaxTemp29">13.4 C</TextBlock>
+                            <TextBlock Name="MaxTemp29"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center">Wind:</TextBlock>
-                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom">Clouds:</TextBlock>
+                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Label29"></TextBlock>
+                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Label68"></TextBlock>
                         <StackPanel Grid.Row="0" Grid.Column="1" Background="LightGray" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="2,2,2,2">
-                            <TextBlock Name="MinTemp29" Margin="5,0,0,0">15.5 C</TextBlock>
+                            <TextBlock Name="MinTemp29" Margin="5,0,0,0"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed29" Margin="5,0,0,0">15.6 M/S</TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud29" Margin="5,0,0,0">92%</TextBlock>
-                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc29">Clear Sky</TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed29" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud29" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc29"></TextBlock>
                         <TextBlock Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA29">933 HPA</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA29"></TextBlock>
                     </Grid>
                 </StackPanel>
                 <!-- 29 end -->
                 <StackPanel Background="Pink" Grid.Column="0" Grid.Row="30" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
                     <Border Height="30">
-                        <TextBlock Name="Date30" HorizontalAlignment="Center" VerticalAlignment="Center">Tue 21 Nov</TextBlock>
+                        <TextBlock Name="Date30" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
                     </Border>
                     <Border Height="29">
-                        <TextBlock Name="Time30" HorizontalAlignment="Center" VerticalAlignment="Top">12:00 PM</TextBlock>
+                        <TextBlock Name="Time30" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
                     </Border>
                 </StackPanel>
                 <StackPanel Background="PeachPuff" Grid.Column="1" Grid.Row="30" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
@@ -1318,27 +1314,27 @@
                             <ColumnDefinition Width="Auto"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <StackPanel Grid.Row="0" Grid.Column="0" Background="Orange" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="0,2,2,2">
-                            <TextBlock Name="MaxTemp30">13.4 C</TextBlock>
+                            <TextBlock Name="MaxTemp30"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center">Wind:</TextBlock>
-                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom">Clouds:</TextBlock>
+                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Label30"></TextBlock>
+                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Label69"></TextBlock>
                         <StackPanel Grid.Row="0" Grid.Column="1" Background="LightGray" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="2,2,2,2">
-                            <TextBlock Name="MinTemp30" Margin="5,0,0,0">15.5 C</TextBlock>
+                            <TextBlock Name="MinTemp30" Margin="5,0,0,0"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed30" Margin="5,0,0,0">15.6 M/S</TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud30" Margin="5,0,0,0">92%</TextBlock>
-                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc30">Clear Sky</TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed30" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud30" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc30"></TextBlock>
                         <TextBlock Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA30">933 HPA</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA30"></TextBlock>
                     </Grid>
                 </StackPanel>
                 <!-- 30 end -->
                 <StackPanel Background="Pink" Grid.Column="0" Grid.Row="31" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
                     <Border Height="30">
-                        <TextBlock Name="Date31" HorizontalAlignment="Center" VerticalAlignment="Center">Tue 21 Nov</TextBlock>
+                        <TextBlock Name="Date31" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
                     </Border>
                     <Border Height="29">
-                        <TextBlock Name="Time31" HorizontalAlignment="Center" VerticalAlignment="Top">12:00 PM</TextBlock>
+                        <TextBlock Name="Time31" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
                     </Border>
                 </StackPanel>
                 <StackPanel Background="PeachPuff" Grid.Column="1" Grid.Row="31" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
@@ -1359,27 +1355,27 @@
                             <ColumnDefinition Width="Auto"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <StackPanel Grid.Row="0" Grid.Column="0" Background="Orange" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="0,2,2,2">
-                            <TextBlock Name="MaxTemp31">13.4 C</TextBlock>
+                            <TextBlock Name="MaxTemp31"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center">Wind:</TextBlock>
-                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom">Clouds:</TextBlock>
+                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Label31"></TextBlock>
+                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Label70"></TextBlock>
                         <StackPanel Grid.Row="0" Grid.Column="1" Background="LightGray" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="2,2,2,2">
-                            <TextBlock Name="MinTemp31" Margin="5,0,0,0">15.5 C</TextBlock>
+                            <TextBlock Name="MinTemp31" Margin="5,0,0,0"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed31" Margin="5,0,0,0">15.6 M/S</TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud31" Margin="5,0,0,0">92%</TextBlock>
-                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc31">Clear Sky</TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed31" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud31" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc31"></TextBlock>
                         <TextBlock Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA31">933 HPA</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA31"></TextBlock>
                     </Grid>
                 </StackPanel>
                 <!-- 31 end -->
                 <StackPanel Background="Pink" Grid.Column="0" Grid.Row="32" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
                     <Border Height="30">
-                        <TextBlock Name="Date32" HorizontalAlignment="Center" VerticalAlignment="Center">Tue 21 Nov</TextBlock>
+                        <TextBlock Name="Date32" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
                     </Border>
                     <Border Height="29">
-                        <TextBlock Name="Time32" HorizontalAlignment="Center" VerticalAlignment="Top">12:00 PM</TextBlock>
+                        <TextBlock Name="Time32" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
                     </Border>
                 </StackPanel>
                 <StackPanel Background="PeachPuff" Grid.Column="1" Grid.Row="32" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
@@ -1400,27 +1396,27 @@
                             <ColumnDefinition Width="Auto"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <StackPanel Grid.Row="0" Grid.Column="0" Background="Orange" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="0,2,2,2">
-                            <TextBlock Name="MaxTemp32">13.4 C</TextBlock>
+                            <TextBlock Name="MaxTemp32"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center">Wind:</TextBlock>
-                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom">Clouds:</TextBlock>
+                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Label32"></TextBlock>
+                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Label71"></TextBlock>
                         <StackPanel Grid.Row="0" Grid.Column="1" Background="LightGray" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="2,2,2,2">
-                            <TextBlock Name="MinTemp32" Margin="5,0,0,0">15.5 C</TextBlock>
+                            <TextBlock Name="MinTemp32" Margin="5,0,0,0"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed32" Margin="5,0,0,0">15.6 M/S</TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud32" Margin="5,0,0,0">92%</TextBlock>
-                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc32">Clear Sky</TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed32" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud32" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc32"></TextBlock>
                         <TextBlock Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA32">933 HPA</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA32"></TextBlock>
                     </Grid>
                 </StackPanel>
                 <!-- 32 end -->
                 <StackPanel Background="Pink" Grid.Column="0" Grid.Row="33" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
                     <Border Height="30">
-                        <TextBlock Name="Date33" HorizontalAlignment="Center" VerticalAlignment="Center">Tue 21 Nov</TextBlock>
+                        <TextBlock Name="Date33" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
                     </Border>
                     <Border Height="29">
-                        <TextBlock Name="Time33" HorizontalAlignment="Center" VerticalAlignment="Top">12:00 PM</TextBlock>
+                        <TextBlock Name="Time33" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
                     </Border>
                 </StackPanel>
                 <StackPanel Background="PeachPuff" Grid.Column="1" Grid.Row="33" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
@@ -1441,27 +1437,27 @@
                             <ColumnDefinition Width="Auto"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <StackPanel Grid.Row="0" Grid.Column="0" Background="Orange" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="0,2,2,2">
-                            <TextBlock Name="MaxTemp33">13.4 C</TextBlock>
+                            <TextBlock Name="MaxTemp33"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center">Wind:</TextBlock>
-                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom">Clouds:</TextBlock>
+                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Label33"></TextBlock>
+                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Label72"></TextBlock>
                         <StackPanel Grid.Row="0" Grid.Column="1" Background="LightGray" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="2,2,2,2">
-                            <TextBlock Name="MinTemp33" Margin="5,0,0,0">15.5 C</TextBlock>
+                            <TextBlock Name="MinTemp33" Margin="5,0,0,0"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed33" Margin="5,0,0,0">15.6 M/S</TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud33" Margin="5,0,0,0">92%</TextBlock>
-                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc33">Clear Sky</TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed33" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud33" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc33"></TextBlock>
                         <TextBlock Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA33">933 HPA</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA33"></TextBlock>
                     </Grid>
                 </StackPanel>
                 <!-- 33 end -->
                 <StackPanel Background="Pink" Grid.Column="0" Grid.Row="34" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
                     <Border Height="30">
-                        <TextBlock Name="Date34" HorizontalAlignment="Center" VerticalAlignment="Center">Tue 21 Nov</TextBlock>
+                        <TextBlock Name="Date34" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
                     </Border>
                     <Border Height="29">
-                        <TextBlock Name="Time34" HorizontalAlignment="Center" VerticalAlignment="Top">12:00 PM</TextBlock>
+                        <TextBlock Name="Time34" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
                     </Border>
                 </StackPanel>
                 <StackPanel Background="PeachPuff" Grid.Column="1" Grid.Row="34" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
@@ -1482,27 +1478,27 @@
                             <ColumnDefinition Width="Auto"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <StackPanel Grid.Row="0" Grid.Column="0" Background="Orange" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="0,2,2,2">
-                            <TextBlock Name="MaxTemp34">13.4 C</TextBlock>
+                            <TextBlock Name="MaxTemp34"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center">Wind:</TextBlock>
-                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom">Clouds:</TextBlock>
+                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Label34"></TextBlock>
+                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Label73"></TextBlock>
                         <StackPanel Grid.Row="0" Grid.Column="1" Background="LightGray" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="2,2,2,2">
-                            <TextBlock Name="MinTemp34" Margin="5,0,0,0">15.5 C</TextBlock>
+                            <TextBlock Name="MinTemp34" Margin="5,0,0,0"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed34" Margin="5,0,0,0">15.6 M/S</TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud34" Margin="5,0,0,0">92%</TextBlock>
-                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc34">Clear Sky</TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed34" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud34" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc34"></TextBlock>
                         <TextBlock Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA34">933 HPA</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA34"></TextBlock>
                     </Grid>
                 </StackPanel>
                 <!-- 34 end -->
                 <StackPanel Background="Pink" Grid.Column="0" Grid.Row="35" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
                     <Border Height="30">
-                        <TextBlock Name="Date35" HorizontalAlignment="Center" VerticalAlignment="Center">Tue 21 Nov</TextBlock>
+                        <TextBlock Name="Date35" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
                     </Border>
                     <Border Height="29">
-                        <TextBlock Name="Time35" HorizontalAlignment="Center" VerticalAlignment="Top">12:00 PM</TextBlock>
+                        <TextBlock Name="Time35" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
                     </Border>
                 </StackPanel>
                 <StackPanel Background="PeachPuff" Grid.Column="1" Grid.Row="35" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
@@ -1523,27 +1519,27 @@
                             <ColumnDefinition Width="Auto"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <StackPanel Grid.Row="0" Grid.Column="0" Background="Orange" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="0,2,2,2">
-                            <TextBlock Name="MaxTemp35">13.4 C</TextBlock>
+                            <TextBlock Name="MaxTemp35"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center">Wind:</TextBlock>
-                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom">Clouds:</TextBlock>
+                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Label35"></TextBlock>
+                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Label74"></TextBlock>
                         <StackPanel Grid.Row="0" Grid.Column="1" Background="LightGray" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="2,2,2,2">
-                            <TextBlock Name="MinTemp35" Margin="5,0,0,0">15.5 C</TextBlock>
+                            <TextBlock Name="MinTemp35" Margin="5,0,0,0"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed35" Margin="5,0,0,0">15.6 M/S</TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud35" Margin="5,0,0,0">92%</TextBlock>
-                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc35">Clear Sky</TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed35" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud35" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc35"></TextBlock>
                         <TextBlock Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA35">933 HPA</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA35"></TextBlock>
                     </Grid>
                 </StackPanel>
                 <!-- 35 end -->
                 <StackPanel Background="Pink" Grid.Column="0" Grid.Row="36" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
                     <Border Height="30">
-                        <TextBlock Name="Date36" HorizontalAlignment="Center" VerticalAlignment="Center">Tue 21 Nov</TextBlock>
+                        <TextBlock Name="Date36" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
                     </Border>
                     <Border Height="29">
-                        <TextBlock Name="Time36" HorizontalAlignment="Center" VerticalAlignment="Top">12:00 PM</TextBlock>
+                        <TextBlock Name="Time36" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
                     </Border>
                 </StackPanel>
                 <StackPanel Background="PeachPuff" Grid.Column="1" Grid.Row="36" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
@@ -1564,27 +1560,27 @@
                             <ColumnDefinition Width="Auto"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <StackPanel Grid.Row="0" Grid.Column="0" Background="Orange" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="0,2,2,2">
-                            <TextBlock Name="MaxTemp36">13.4 C</TextBlock>
+                            <TextBlock Name="MaxTemp36"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center">Wind:</TextBlock>
-                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom">Clouds:</TextBlock>
+                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Label36"></TextBlock>
+                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Label75"></TextBlock>
                         <StackPanel Grid.Row="0" Grid.Column="1" Background="LightGray" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="2,2,2,2">
-                            <TextBlock Name="MinTemp36" Margin="5,0,0,0">15.5 C</TextBlock>
+                            <TextBlock Name="MinTemp36" Margin="5,0,0,0"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed36" Margin="5,0,0,0">15.6 M/S</TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud36" Margin="5,0,0,0">92%</TextBlock>
-                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc36">Clear Sky</TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed36" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud36" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc36"></TextBlock>
                         <TextBlock Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA36">933 HPA</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA36"></TextBlock>
                     </Grid>
                 </StackPanel>
                 <!-- 36 end -->
                 <StackPanel Background="Pink" Grid.Column="0" Grid.Row="37" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
                     <Border Height="30">
-                        <TextBlock Name="Date37" HorizontalAlignment="Center" VerticalAlignment="Center">Tue 21 Nov</TextBlock>
+                        <TextBlock Name="Date37" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
                     </Border>
                     <Border Height="29">
-                        <TextBlock Name="Time37" HorizontalAlignment="Center" VerticalAlignment="Top">12:00 PM</TextBlock>
+                        <TextBlock Name="Time37" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
                     </Border>
                 </StackPanel>
                 <StackPanel Background="PeachPuff" Grid.Column="1" Grid.Row="37" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
@@ -1605,27 +1601,27 @@
                             <ColumnDefinition Width="Auto"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <StackPanel Grid.Row="0" Grid.Column="0" Background="Orange" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="0,2,2,2">
-                            <TextBlock Name="MaxTemp37">13.4 C</TextBlock>
+                            <TextBlock Name="MaxTemp37"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center">Wind:</TextBlock>
-                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom">Clouds:</TextBlock>
+                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Label37"></TextBlock>
+                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Label76"></TextBlock>
                         <StackPanel Grid.Row="0" Grid.Column="1" Background="LightGray" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="2,2,2,2">
-                            <TextBlock Name="MinTemp37" Margin="5,0,0,0">15.5 C</TextBlock>
+                            <TextBlock Name="MinTemp37" Margin="5,0,0,0"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed37" Margin="5,0,0,0">15.6 M/S</TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud37" Margin="5,0,0,0">92%</TextBlock>
-                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc37">Clear Sky</TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed37" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud37" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc37"></TextBlock>
                         <TextBlock Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA37">933 HPA</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA37"></TextBlock>
                     </Grid>
                 </StackPanel>
                 <!-- 37 end -->
                 <StackPanel Background="Pink" Grid.Column="0" Grid.Row="38" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
                     <Border Height="30">
-                        <TextBlock Name="Date38" HorizontalAlignment="Center" VerticalAlignment="Center">Tue 21 Nov</TextBlock>
+                        <TextBlock Name="Date38" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
                     </Border>
                     <Border Height="29">
-                        <TextBlock Name="Time38" HorizontalAlignment="Center" VerticalAlignment="Top">12:00 PM</TextBlock>
+                        <TextBlock Name="Time38" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
                     </Border>
                 </StackPanel>
                 <StackPanel Background="PeachPuff" Grid.Column="1" Grid.Row="38" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
@@ -1646,113 +1642,21 @@
                             <ColumnDefinition Width="Auto"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <StackPanel Grid.Row="0" Grid.Column="0" Background="Orange" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="0,2,2,2">
-                            <TextBlock Name="MaxTemp38">13.4 C</TextBlock>
+                            <TextBlock Name="MaxTemp38"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center">Wind:</TextBlock>
-                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom">Clouds:</TextBlock>
+                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Label38"></TextBlock>
+                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Label77"></TextBlock>
                         <StackPanel Grid.Row="0" Grid.Column="1" Background="LightGray" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="2,2,2,2">
-                            <TextBlock Name="MinTemp38" Margin="5,0,0,0">15.5 C</TextBlock>
+                            <TextBlock Name="MinTemp38" Margin="5,0,0,0"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed38" Margin="5,0,0,0">15.6 M/S</TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud38" Margin="5,0,0,0">92%</TextBlock>
-                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc38">Clear Sky</TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed38" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud38" Margin="5,0,0,0"></TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc38"></TextBlock>
                         <TextBlock Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA38">933 HPA</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA38"></TextBlock>
                     </Grid>
                 </StackPanel>
                 <!-- 38 end -->
-                <!--
-                <StackPanel Background="Pink" Grid.Column="0" Grid.Row="39" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
-                    <Border Height="30">
-                        <TextBlock Name="Date39" HorizontalAlignment="Center" VerticalAlignment="Center">Tue 21 Nov</TextBlock>
-                    </Border>
-                    <Border Height="29">
-                        <TextBlock Name="Time39" HorizontalAlignment="Center" VerticalAlignment="Top">12:00 PM</TextBlock>
-                    </Border>
-                </StackPanel>
-                <StackPanel Background="PeachPuff" Grid.Column="1" Grid.Row="39" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
-                    <Border Height="59">
-                        <Image Name="WeatherImage39" Width="60" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center"></Image>
-                    </Border>
-                </StackPanel>
-                <StackPanel Background="Pink" Grid.Column="2" Grid.Row="39">
-                    <Grid Height="60" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="*"></RowDefinition>
-                            <RowDefinition Height="*"></RowDefinition>
-                            <RowDefinition Height="*"></RowDefinition>
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="Auto"></ColumnDefinition>
-                            <ColumnDefinition Width="Auto"></ColumnDefinition>
-                            <ColumnDefinition Width="Auto"></ColumnDefinition>
-                        </Grid.ColumnDefinitions>
-                        <StackPanel Grid.Row="0" Grid.Column="0" Background="Orange" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="0,2,2,2">
-                            <TextBlock Name="MaxTemp39">13.4 C</TextBlock>
-                        </StackPanel>
-                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center">Wind:</TextBlock>
-                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom">Clouds:</TextBlock>
-                        <StackPanel Grid.Row="0" Grid.Column="1" Background="LightGray" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="2,2,2,2">
-                            <TextBlock Name="MinTemp39" Margin="5,0,0,0">15.5 C</TextBlock>
-                        </StackPanel>
-                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed39" Margin="5,0,0,0">15.6 M/S</TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud39" Margin="5,0,0,0">92%</TextBlock>
-                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc39">Clear Sky</TextBlock>
-                        <TextBlock Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA39">933 HPA</TextBlock>
-                    </Grid>
-                </StackPanel>
-                -->
-                <!-- 39 end -->
-                <!--
-                <StackPanel Background="Pink" Grid.Column="0" Grid.Row="40" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
-                    <Border Height="30">
-                        <TextBlock Name="Date40" HorizontalAlignment="Center" VerticalAlignment="Center">Tue 21 Nov</TextBlock>
-                    </Border>
-                    <Border Height="29">
-                        <TextBlock Name="Time40" HorizontalAlignment="Center" VerticalAlignment="Top">12:00 PM</TextBlock>
-                    </Border>
-                </StackPanel>
-                <StackPanel Background="PeachPuff" Grid.Column="1" Grid.Row="40" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
-                    <Border Height="59">
-                        <Image Name="WeatherImage40" Width="60" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center"></Image>
-                    </Border>
-                </StackPanel>
-                <StackPanel Background="Pink" Grid.Column="2" Grid.Row="40">
-                    <Grid Height="60" BorderBrush="#b8b8c8" BorderThickness="0,0,0,1">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="*"></RowDefinition>
-                            <RowDefinition Height="*"></RowDefinition>
-                            <RowDefinition Height="*"></RowDefinition>
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="Auto"></ColumnDefinition>
-                            <ColumnDefinition Width="Auto"></ColumnDefinition>
-                            <ColumnDefinition Width="Auto"></ColumnDefinition>
-                        </Grid.ColumnDefinitions>
-                        <StackPanel Grid.Row="0" Grid.Column="0" Background="Orange" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="0,2,2,2">
-                            <TextBlock Name="MaxTemp40">13.4 C</TextBlock>
-                        </StackPanel>
-                        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center">Wind:</TextBlock>
-                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom">Clouds:</TextBlock>
-                        <StackPanel Grid.Row="0" Grid.Column="1" Background="LightGray" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="2,2,2,2">
-                            <TextBlock Name="MinTemp40" Margin="5,0,0,0">15.5 C</TextBlock>
-                        </StackPanel>
-                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Name="Speed40" Margin="5,0,0,0">15.6 M/S</TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="Cloud40" Margin="5,0,0,0">92%</TextBlock>
-                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Desc40">Clear Sky</TextBlock>
-                        <TextBlock Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-                        <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="HPA40">933 HPA</TextBlock>
-                    </Grid>
-                </StackPanel>
-                -->
-                <!-- 40 end -->
-                <!-- one more row to ensure last item(40) is visible -->
-                <!-- 
-                <StackPanel Grid.Column="0" Grid.Row="41">
-                </StackPanel>
-                -->
-                <!-- -->
                 <StackPanel Height="1" Grid.Column="0" Grid.Row="39">
                 </StackPanel>
             </Grid>

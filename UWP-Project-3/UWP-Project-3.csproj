@@ -105,9 +105,6 @@
     <Compile Include="ViewModel\Forecast.xaml.cs">
       <DependentUpon>Forecast.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ViewModel\ForecastCity.xaml.cs">
-      <DependentUpon>ForecastCity.xaml</DependentUpon>
-    </Compile>
     <Compile Include="ViewModel\Home.xaml.cs">
       <DependentUpon>Home.xaml</DependentUpon>
     </Compile>
@@ -121,6 +118,9 @@
     </Compile>
     <Compile Include="ViewModel\TideForecastCounty.xaml.cs">
       <DependentUpon>TideForecastCounty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\WeatherForecastCounty.xaml.cs">
+      <DependentUpon>WeatherForecastCounty.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -166,10 +166,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ViewModel\ForecastCity.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="ViewModel\Home.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -183,6 +179,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ViewModel\TideForecastCounty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewModel\WeatherForecastCounty.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -26,67 +26,67 @@
                         </Grid.ColumnDefinitions>
                         <StackPanel Grid.Column="0" HorizontalAlignment="Center" Margin="0,0,10,0">
                             <Border BorderThickness="0 0 0 3" BorderBrush="#b8b8c8">
-                                <TextBlock HorizontalAlignment="Center">Location</TextBlock>
+                                <TextBlock HorizontalAlignment="Center" Name="Label0"></TextBlock>
                             </Border>
                             <Border BorderThickness="0 0 0 3" BorderBrush="#b8b8c8">
-                                <TextBlock HorizontalAlignment="Center">Description</TextBlock>
+                                <TextBlock HorizontalAlignment="Center" Name="Label1"></TextBlock>
                             </Border>
                             <Border BorderThickness="0 0 0 3" BorderBrush="#b8b8c8">
-                                <TextBlock HorizontalAlignment="Center">Temperature</TextBlock>
+                                <TextBlock HorizontalAlignment="Center" Name="Label2"></TextBlock>
                             </Border>
                             <Border BorderThickness="0 0 0 3" BorderBrush="#b8b8c8">
-                                <TextBlock HorizontalAlignment="Center">Wind Speed</TextBlock>
+                                <TextBlock HorizontalAlignment="Center" Name="Label3"></TextBlock>
                             </Border>
                             <Border BorderThickness="0 0 0 3" BorderBrush="#b8b8c8">
-                                <TextBlock HorizontalAlignment="Center" Margin="0,10,0,0">Sun Rise</TextBlock>
+                                <TextBlock HorizontalAlignment="Center" Margin="0,10,0,0" Name="Label4"></TextBlock>
                             </Border>
                             <Border BorderThickness="0 0 0 3" BorderBrush="#b8b8c8">
-                                <TextBlock HorizontalAlignment="Center">Sun Set</TextBlock>
+                                <TextBlock HorizontalAlignment="Center" Name="Label5"></TextBlock>
                             </Border>
                             <Border BorderThickness="0 0 0 3" BorderBrush="#b8b8c8">
-                                <TextBlock Name="TideTypeBlock" Margin="0,10,0,0" HorizontalAlignment="Center">High/Low</TextBlock>
+                                <TextBlock Name="TideTypeBlock" Margin="0,10,0,0" HorizontalAlignment="Center"></TextBlock>
                             </Border>
                             <Border BorderThickness="0 0 0 3" BorderBrush="#b8b8c8">
-                                <TextBlock Name="TideTypeBlock1" HorizontalAlignment="Center">High/Low</TextBlock>
+                                <TextBlock Name="TideTypeBlock1" HorizontalAlignment="Center"></TextBlock>
                             </Border>
                             <Border BorderThickness="0 0 0 3" BorderBrush="#b8b8c8">
-                                <TextBlock Name="TideTypeBlock2" HorizontalAlignment="Center">High/Low</TextBlock>
+                                <TextBlock Name="TideTypeBlock2" HorizontalAlignment="Center"></TextBlock>
                             </Border>
                             <Border BorderThickness="0 0 0 3" BorderBrush="#b8b8c8">
-                                <TextBlock Name="TideTypeBlock3" HorizontalAlignment="Center">High/Low</TextBlock>
+                                <TextBlock Name="TideTypeBlock3" HorizontalAlignment="Center"></TextBlock>
                             </Border>
                         </StackPanel>
 
                         <StackPanel Grid.Column="1" HorizontalAlignment="Center">
                             <Border BorderThickness="0 0 0 3" BorderBrush="#b8b8c8">
-                                <TextBlock Name="LocationBlock" HorizontalAlignment="Center">WeatherBlock</TextBlock>
+                                <TextBlock Name="LocationBlock" HorizontalAlignment="Center"></TextBlock>
                             </Border>
                             <Border BorderThickness="0 0 0 3" BorderBrush="#b8b8c8">
-                                <TextBlock Name="DescriptionBlock" HorizontalAlignment="Center">DescriptionBlock</TextBlock>
+                                <TextBlock Name="DescriptionBlock" HorizontalAlignment="Center"></TextBlock>
                             </Border>
                             <Border BorderThickness="0 0 0 3" BorderBrush="#b8b8c8">
-                                <TextBlock Name="TemperatureBlock" HorizontalAlignment="Center">TemperatureBlock</TextBlock>
+                                <TextBlock Name="TemperatureBlock" HorizontalAlignment="Center"></TextBlock>
                             </Border>
                             <Border BorderThickness="0 0 0 3" BorderBrush="#b8b8c8">
-                                <TextBlock Name="WindBlock" HorizontalAlignment="Center">WindBlock</TextBlock>
+                                <TextBlock Name="WindBlock" HorizontalAlignment="Center"></TextBlock>
                             </Border>
                             <Border BorderThickness="0 0 0 3" BorderBrush="#b8b8c8">
-                                <TextBlock Name="SunRiseBlock" HorizontalAlignment="Center" Margin="0,10,0,0">SunRiseBlock</TextBlock>
+                                <TextBlock Name="SunRiseBlock" HorizontalAlignment="Center" Margin="0,10,0,0"></TextBlock>
                             </Border>
                             <Border BorderThickness="0 0 0 3" BorderBrush="#b8b8c8">
-                                <TextBlock Name="SunSetBlock" HorizontalAlignment="Center">SunSetBlock</TextBlock>
+                                <TextBlock Name="SunSetBlock" HorizontalAlignment="Center"></TextBlock>
                             </Border>
                             <Border BorderThickness="0 0 0 3" BorderBrush="#b8b8c8">
-                                <TextBlock Name="TideTimeBlock" Margin="0,10,0,0" HorizontalAlignment="Center">TideTimeBlock</TextBlock>
+                                <TextBlock Name="TideTimeBlock" Margin="0,10,0,0" HorizontalAlignment="Center"></TextBlock>
                             </Border>
                             <Border BorderThickness="0 0 0 3" BorderBrush="#b8b8c8">
-                                <TextBlock Name="TideTimeBlock1" HorizontalAlignment="Center">TideTimeBlock</TextBlock>
+                                <TextBlock Name="TideTimeBlock1" HorizontalAlignment="Center"></TextBlock>
                             </Border>
                             <Border BorderThickness="0 0 0 3" BorderBrush="#b8b8c8">
-                                <TextBlock Name="TideTimeBlock2" HorizontalAlignment="Center">TideTimeBlock</TextBlock>
+                                <TextBlock Name="TideTimeBlock2" HorizontalAlignment="Center"></TextBlock>
                             </Border>
                             <Border BorderThickness="0 0 0 3" BorderBrush="#b8b8c8">
-                                <TextBlock Name="TideTimeBlock3" HorizontalAlignment="Center">TideTimeBlock</TextBlock>
+                                <TextBlock Name="TideTimeBlock3" HorizontalAlignment="Center"></TextBlock>
                             </Border>
                         </StackPanel>
                     </Grid>
