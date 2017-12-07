@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
-  <Identity Name="21c53e36-59ea-4df8-86ba-3c755c375cc0" Publisher="CN=Richard" Version="1.0.0.0" />
+  <Identity Name="64357BRONZESKRUBLORD.WeatherFisher" Publisher="CN=F388952F-D311-4B2C-BBDB-C90EFC7AA9C9" Version="1.1.5.0" />
   <mp:PhoneIdentity PhoneProductId="21c53e36-59ea-4df8-86ba-3c755c375cc0" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
-    <DisplayName>UWP-Project-3</DisplayName>
-    <PublisherDisplayName>Richard</PublisherDisplayName>
-    <Logo>Assets\StoreLogo.png</Logo>
+    <DisplayName>Weather Fisher</DisplayName>
+    <PublisherDisplayName>BRONZE SKRUBLORD</PublisherDisplayName>
+    <Logo>assets\images\Store\StoreLogo.png</Logo>
   </Properties>
   <Dependencies>
     <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
@@ -15,10 +15,20 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="UWP_Project_3.App">
-      <uap:VisualElements DisplayName="UWP-Project-3" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="UWP-Project-3" BackgroundColor="transparent">
-        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png">
+      <uap:VisualElements DisplayName="Weather Fisher" Square150x150Logo="assets\images\Medium\Medium150x150Logo.png" Square44x44Logo="assets\images\AppList\AppList.png" Description="Displays current weather and tide level based on GPS location.  This application also allows the user to look up the weather forecast &amp; tide forecast for any county in Ireland with just a few clicks." BackgroundColor="transparent">
+        <uap:DefaultTile ShortName="Weather Fisher" Square71x71Logo="assets\images\Small\Small71x71Logo.png" Wide310x150Logo="assets\images\Wide\Wide310x150Logo.png" Square310x310Logo="assets\images\Large\Large310x310Logo.png">
+          <uap:ShowNameOnTiles>
+            <uap:ShowOn Tile="square150x150Logo" />
+            <uap:ShowOn Tile="square310x310Logo" />
+          </uap:ShowNameOnTiles>
         </uap:DefaultTile>
-        <uap:SplashScreen Image="Assets\SplashScreen.png" />
+        <uap:SplashScreen Image="assets\images\SplashScreen\SplashScreen.png" BackgroundColor="black" />
+        <uap:InitialRotationPreference>
+          <uap:Rotation Preference="portrait" />
+          <uap:Rotation Preference="landscape" />
+          <uap:Rotation Preference="portraitFlipped" />
+          <uap:Rotation Preference="landscapeFlipped" />
+        </uap:InitialRotationPreference>
       </uap:VisualElements>
     </Application>
   </Applications>

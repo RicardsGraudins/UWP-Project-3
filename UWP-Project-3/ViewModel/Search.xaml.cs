@@ -74,7 +74,7 @@ namespace UWP_Project_3.ViewModel
                     break;
 
                 //API doesn't have entry for Leitrim / Liatroim / Liatroma
-                //therefore using largest city - Carrick-on-Shannon
+                //Therefore using largest city in Leitrim - Carrick-on-Shannon
                 case 11:
                     city = "Carrick-on-Shannon";
                     this.Frame.Navigate(typeof(WeatherForecastCounty), city);
@@ -293,7 +293,7 @@ namespace UWP_Project_3.ViewModel
 
                 default:
                     break;
-            }//switch
+            }//Switch
         }//SectionChanged
     }//Search
 }//UWP

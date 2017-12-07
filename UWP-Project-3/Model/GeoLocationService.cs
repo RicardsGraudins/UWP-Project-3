@@ -2,7 +2,6 @@
 using System.Diagnostics;
 using System.Threading.Tasks;
 using Windows.Devices.Geolocation;
-using Windows.System;
 
 namespace UWP_Project_3.Model
 {

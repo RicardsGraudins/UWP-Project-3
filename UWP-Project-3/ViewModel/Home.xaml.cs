@@ -21,7 +21,6 @@ namespace UWP_Project_3
         {
             if (e.Parameter is string && !string.IsNullOrWhiteSpace((string)e.Parameter))
             {
-                //Loading animaton
                 CurrentWeather();
                 CurrentTidesExtreme();
             }
