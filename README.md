@@ -15,6 +15,8 @@ For this project I developed an application that can be beneficial for individua
 
 The key component of this application is utilizing the [OpenWeatherMap](https://openweathermap.org/) API & [WorldTides](https://www.worldtides.info/home) API for retrieving weather data & tidal data respectively. The data retrieved from both of these  APIs is delivered in the json format and sorted into their respective class objects everytime a call is made to retrieve the data which is afterwards displayed to the user.
 
+As part of this project I also created my own API which handles the data storage and retrieval aspect of this project using the standard MVC pattern. The API can be viewed in the following [repository](https://github.com/RicardsGraudins/Weather-Fisher-API).
+
 ## What is MVVM:
 Model–view–viewmodel (MVVM) is a software architectural pattern.
 ![MVVM Image](https://upload.wikimedia.org/wikipedia/commons/8/87/MVVMPattern.png)
