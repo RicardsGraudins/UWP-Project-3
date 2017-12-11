@@ -58,6 +58,12 @@ namespace UWP_Project_3.Model
             await message.ShowAsync();
         }
 
+        public async void WeatherFisherAPIError()
+        {
+            var message = new Windows.UI.Popups.MessageDialog("Unable to retrieve data from http://worldtidesforecast20171125090607.azurewebsites.net/");
+            await message.ShowAsync();
+        }
+
         public async void OpenWeatherMapError()
         {
             var message = new Windows.UI.Popups.MessageDialog("Unable to retrieve data from https://openweathermap.org/");

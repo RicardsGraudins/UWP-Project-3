@@ -20,6 +20,7 @@ namespace UWP_Project_3.ViewModel
             {
                 //OnNavigatedTo with parameter display the forecast
                 string county = e.Parameter.ToString();
+                //string county2 = "";
                 double lat = 0;
                 double lon = 0;
 
@@ -187,6 +188,143 @@ namespace UWP_Project_3.ViewModel
                     default:
                         break;
                 }//Switch
+                /* Weather Fisher API
+                switch (county)
+                {
+                    case "Carlow":
+                        county2 = "Carlow";
+                        ForecastTidesWeatherFisher(county2);
+                        break;
+
+                    case "Cavan":
+                        county2 = "Cavan";
+                        ForecastTidesWeatherFisher(county2);
+                        break;
+
+                    case "Clare":
+                        county2 = "Clare";
+                        ForecastTidesWeatherFisher(county2);
+                        break;
+
+                    case "Cork":
+                        county2 = "Cork";
+                        ForecastTidesWeatherFisher(county2);
+                        break;
+
+                    case "Donegal":
+                        county2 = "Donegal";
+                        ForecastTidesWeatherFisher(county2);
+                        break;
+
+                    case "Dublin":
+                        county2 = "Dublin";
+                        ForecastTidesWeatherFisher(county2);
+                        break;
+
+                    case "Galway":
+                        county2 = "Galway";
+                        ForecastTidesWeatherFisher(county2);
+                        break;
+
+                    case "Kerry":
+                        county2 = "Kerry";
+                        ForecastTidesWeatherFisher(county2);
+                        break;
+
+                    case "Kildare":
+                        county2 = "Kildare";
+                        ForecastTidesWeatherFisher(county2);
+                        break;
+
+                    case "Kilkenny":
+                        county2 = "Kilkenny";
+                        ForecastTidesWeatherFisher(county2);
+                        break;
+
+                    case "Laois":
+                        county2 = "Laois";
+                        ForecastTidesWeatherFisher(county2);
+                        break;
+
+                    case "Carrick-on-Shannon":
+                        county2 = "Leitrim";
+                        ForecastTidesWeatherFisher(county2);
+                        break;
+
+                    case "Limerick":
+                        county2 = "Limerick";
+                        ForecastTidesWeatherFisher(county2);
+                        break;
+
+                    case "Longford":
+                        county2 = "Longford";
+                        ForecastTidesWeatherFisher(county2);
+                        break;
+
+                    case "Louth":
+                        county2 = "Louth";
+                        ForecastTidesWeatherFisher(county2);
+                        break;
+
+                    case "Mayo":
+                        county2 = "Mayo";
+                        ForecastTidesWeatherFisher(county2);
+                        break;
+
+                    case "Meath":
+                        county2 = "Meath";
+                        ForecastTidesWeatherFisher(county2);
+                        break;
+
+                    case "Monaghan":
+                        county2 = "Monaghan";
+                        ForecastTidesWeatherFisher(county2);
+                        break;
+
+                    case "Offaly":
+                        county2 = "Offaly";
+                        ForecastTidesWeatherFisher(county2);
+                        break;
+
+                    case "Roscommon":
+                        county2 = "Roscommon";
+                        ForecastTidesWeatherFisher(county2);
+                        break;
+
+                    case "Sligo":
+                        county2 = "Sligo";
+                        ForecastTidesWeatherFisher(county2);
+                        break;
+
+                    case "Tipperary":
+                        county2 = "Tipperary";
+                        ForecastTidesWeatherFisher(county2);
+                        break;
+
+                    case "Waterford":
+                        county2 = "Waterford";
+                        ForecastTidesWeatherFisher(county2);
+                        break;
+
+                    case "Westmeath":
+                        county2 = "Westmeath";
+                        ForecastTidesWeatherFisher(county2);
+                        break;
+
+                    case "Wexford":
+                        county2 = "Wexford";
+                        ForecastTidesWeatherFisher(county2);
+                        break;
+
+                    case "Wicklow":
+                        county2 = "Wicklow";
+                        ForecastTidesWeatherFisher(county2);
+                        break;
+
+                    default:
+                        break;
+                }//Switch
+                */
             }
             else
             {
@@ -272,5 +410,83 @@ namespace UWP_Project_3.ViewModel
                 myMethods.WorldTidesError();
             }//Catch
         }//ForecastTides
+
+        public async void ForecastTidesWeatherFisher(string county)
+        {
+            try
+            {
+                RootObjectExtreme myTides = await Model.WorldTidesExtremeService.GetCounty(county);
+
+                var tideTime = "";
+                var tide = myMethods.getDate(myTides.extremes[0].dt);
+                var tide1 = myMethods.getDate(myTides.extremes[1].dt);
+                var tide2 = myMethods.getDate(myTides.extremes[2].dt);
+                var tide3 = myMethods.getDate(myTides.extremes[3].dt);
+                var tide4 = myMethods.getDate(myTides.extremes[4].dt);
+                var tide5 = myMethods.getDate(myTides.extremes[5].dt);
+                var tide6 = myMethods.getDate(myTides.extremes[6].dt);
+
+                //Display tide date
+                tideTime = tide.ToString("ddd dd MMM");
+                Date0.Text = tideTime;
+                tideTime = tide1.ToString("ddd dd MMM");
+                Date1.Text = tideTime;
+                tideTime = tide2.ToString("ddd dd MMM");
+                Date2.Text = tideTime;
+                tideTime = tide3.ToString("ddd dd MMM");
+                Date3.Text = tideTime;
+                tideTime = tide4.ToString("ddd dd MMM");
+                Date4.Text = tideTime;
+                tideTime = tide5.ToString("ddd dd MMM");
+                Date5.Text = tideTime;
+                tideTime = tide6.ToString("ddd dd MMM");
+                Date6.Text = tideTime;
+
+                //Display the time of high/low tides
+                tideTime = tide.ToString("t");
+                Time0.Text = tideTime;
+                tideTime = tide1.ToString("t");
+                Time1.Text = tideTime;
+                tideTime = tide2.ToString("t");
+                Time2.Text = tideTime;
+                tideTime = tide3.ToString("t");
+                Time3.Text = tideTime;
+                tideTime = tide4.ToString("t");
+                Time4.Text = tideTime;
+                tideTime = tide5.ToString("t");
+                Time5.Text = tideTime;
+                tideTime = tide6.ToString("t");
+                Time6.Text = tideTime;
+
+                //Display tide type
+                Tide0.Text = myTides.extremes[0].type;
+                Tide1.Text = myTides.extremes[1].type;
+                Tide2.Text = myTides.extremes[2].type;
+                Tide3.Text = myTides.extremes[3].type;
+                Tide4.Text = myTides.extremes[4].type;
+                Tide5.Text = myTides.extremes[5].type;
+                Tide6.Text = myTides.extremes[6].type;
+
+                //Display tide height
+                Height0.Text = String.Format("{0} m", myTides.extremes[0].height);
+                Height1.Text = String.Format("{0} m", myTides.extremes[1].height);
+                Height2.Text = String.Format("{0} m", myTides.extremes[2].height);
+                Height3.Text = String.Format("{0} m", myTides.extremes[3].height);
+                Height4.Text = String.Format("{0} m", myTides.extremes[4].height);
+                Height5.Text = String.Format("{0} m", myTides.extremes[5].height);
+                Height6.Text = String.Format("{0} m", myTides.extremes[6].height);
+
+                WorldTidesStation.Text = "WorldTides Station: Undefined";
+
+                if (myTides.station != null)
+                {
+                    WorldTidesStation.Text = string.Format("WorldTides Station: {0}", myTides.station);
+                }
+            }//Try
+            catch
+            {
+                myMethods.WeatherFisherAPIError();
+            }
+        }//ForestTidesWeatherFisher
     }//TideForecastCounty
 }//UWP

@@ -52,6 +52,9 @@ namespace UWP_Project_3.Data
             public string station { get; set; }
 
             [DataMember]
+            public string county { get; set; }
+
+            [DataMember]
             public List<Extreme> extremes { get; set; }
         }//RootObjectExtreme
     }//WorldTidesExtremes

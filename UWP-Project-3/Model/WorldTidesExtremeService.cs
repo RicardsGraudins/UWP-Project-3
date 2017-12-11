@@ -23,5 +23,21 @@ namespace UWP_Project_3.Model
 
             return data;
         }//GetMaxMinTides
+
+        //Using Weather Fisher API https://github.com/RicardsGraudins/Weather-Fisher-API
+        public async static Task<RootObjectExtreme> GetCounty(string county)
+        {
+            var http = new HttpClient();
+            var url = String.Format("https://worldtidesforecast20171125090607.azurewebsites.net/?county={0}", county);
+            var response = await http.GetAsync(url);
+            var result = await response.Content.ReadAsStringAsync();
+
+            RootObjectExtreme deserializedObject = new RootObjectExtreme();
+            MemoryStream ms = new MemoryStream(Encoding.UTF8.GetBytes(result));
+            DataContractJsonSerializer ser = new DataContractJsonSerializer(deserializedObject.GetType());
+            deserializedObject = ser.ReadObject(ms) as RootObjectExtreme;
+
+            return deserializedObject;
+        }//GetCounty
     }//WorldTidesExtremeService
 }//UWP
